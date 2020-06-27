@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="author" content="ABU SAYED">
+    <!-- favicon css -->
+    <link rel="icon" href="assets/images/favicon1.ico" sizes="60x60" type="image/x-icon">
+    <!-- Site Title css -->
+    <title>About</title>
+
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Fontawesome CSS -->
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <!-- Jquery-ui CSS -->
+    <link rel="stylesheet" href="assets/css/jquery-ui.min.css">
+    <!-- wow.animate CSS -->
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <!-- owl.carousel CSS -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+    
+    <section class="">
+      <div class="hader_top">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-12">
+                      <nav class="navbar navbar-expand-lg navbar-light bgnav_color">
+                        <!-- site_logo Start -->
+                          <div class="site_logo col-md-2">
+                              <a class="navbar-brand" href="index.html">
+                                  <img  src="assets/images/Turo_logo2.png" class="img-fluid" alt="Responsive image">
+                              </a>
+                          </div>
+                          <!-- Site_logo END// -->
+
+                          <!-- headersearchbarmenu -->
+                          <div class="searchbararea headersearchbarmenu">
+                            <div class="header_searchbar headersearchbar">
+                                <div onfocusout='hideOptions()'>
+                                    <span style="color:#59d389; top:37px; position:absolute;">Where</span>
+                                    <input type = "text" id = "insertText" autocomplete="off" placeholder="City, airport, address, or hotel" onkeyup = "if (event.keyCode == 13) {SearchAddress(option1.text)} else {giveSuggestion()}" onfocus='showOptions()'/>
+
+                                    <div class="form_location_hide formlocationhide">
+                                            <option class="option" id = "option1" onmousedown = "searchAddress(option1.text)" >
+                                                <i class="fas fa-location-arrow"></i>
+                                                &nbsp; Current location
+                                            </option>
+                                            <option class="option" id = "option2" onmousedown = "searchAddress(option2.text)">
+                                                <i class="fas fa-place-of-worship"></i>
+                                                &nbsp; Los Angeles, CA</a>
+
+                                            </option>
+                                            <option class="option" id = "option3" onmousedown = "searchAddress(option3.text)">
+                                                <i class="fas fa-bus-alt"></i>
+                                                &nbsp; Union Station, Los Angeles
+                                            
+                                            </option>
+                                            <option class="option" id = "option4" onmousedown = "searchAddress(option4.text)">
+                                                <i class="fas fa-plane-departure"></i>
+                                                &nbsp; San Jose Norman Mineta airport
+                                            
+                                            </option>
+                                            <option class="option" id = "option5" onmousedown = "searchAddress(option5.text)"> 
+                                                <i class="fas fa-place-of-worship"></i>
+                                                &nbsp; Sheraton Grand, Los Angeles
+                                            </option>
+                                            <option class="option" id = "option6" onmousedown = "searchAddress(option6.text)">
+                                                <i class="fas fa-place-of-worship"></i>
+                                                &nbsp; San Francisco, CA
+                                            </option>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+
+                          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+
+                          <div class="collapse navbar-collapse justify-content-end navbg_color.navbg_custom_color" id="navbarNav">
+                            <ul class="navbar-nav">
+                              <li class="nav-item active">
+                                <a class="nav-link" href="listyourcar.html">List your car <span class="sr-only">(current)</span></a>
+                              </li>
+                              <div class="dropdown">
+                                <button class="dropbtn">Learn more</button>
+                                <div class="dropdown-content">
+                                    <a href="bookacare.html">Book a care</a>
+                                    <a href="carculator.html">Carculator</a>
+                                    <a href="allstarhosts.html">All star hosts</a>
+                                    <a href="hosttools.html">Host tools</a>
+                                    <a href="trustandsafety.html">Trust & safety</a>
+                                </div>
+                              </div>  
+
+                              <!-- Sign up-->
+                              <li class="nav-item">
+                                <a class="nav-link" href="#" data-toggle="modal" data-target="#myModal">Sign up</a>
+                                <!-- The Modal -->
+                                <div class="modal" id="myModal">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <!-- Modal Header -->
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            </div>
+                                            <!-- Modal body -->
+                                            <div class="modal-body text-center">
+                                                <div class="modal_title">
+                                                    <h1>Welcome to Turo</h1>
+                                                </div>
+
+                                                <div class="modal_signupFragment">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#"> <span><i class="fab fa-apple"></i></span>    Continue with Apple</a>
+                                                        </li>            
+                                                        <li>
+                                                            <a href="#"><span><i class="fab fa-google-plus-g"></i></span> Continue with Google</a>
+                                                        </li>                     
+                                                        <li>
+                                                            <a href="#"><span style="color:#4267B2"><i class="fab fa-facebook-f"></i></span> Continue with Facebook</a>
+                                                        </li>                       
+                                                        <li>
+                                                            <a href="continueemailsign.html"><span><i class="far fa-envelope"></i></span> Continue with email</a>
+                                                        </li>
+                                                    </ul>
+                                                    <!-- modal_btn -->
+                                                    <div class="modal_btn">
+                                                        <p>Already have an account?</p>
+                                                        <span><a href="login.html">Log in </a></span>
+                                                    </div>
+
+                                                    <div class="authFormTextAndButton">
+                                                        <p>This site is protected  by reCAPTCHA <a href="#">Privacy Policy</a>  and <a href="#">Terms of Service</a> the Google  and  apply</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                              </li>
+
+                            <!-- Login Start-->
+                              <li class="nav-item">
+                                <a class="nav-link" href="#" data-toggle="modal" data-target="#myModal2" >Log in</a>
+                                <!-- The Modal -->
+                                <div class="modal" id="myModal2">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <!-- Modal Header -->
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            </div>
+                                            <!-- Modal body -->
+                                            <div class="modal-body text-center">
+                                                <div class="modal_title">
+                                                    <h1>Welcome back</h1>
+                                                </div>
+
+                                                <form>
+                                                    <div class="form-group">
+                                                        <label for="inputEmail4">Email</label>
+                                                        <input type="email" class="form-control" id="inputEmail4">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="inputPassword4">Password</label> <a href="#" class="float-right" style="color: #8F63F4;">Forgot your password?</a>
+                                                        <input type="password" class="form-control" id="inputPassword4">
+                                                    </div>
+
+                                                    <button type="submit" class="btn btn-primary col-md-12">Submit</button>
+
+                                                    <p style="font-weight: bold; padding: 20px 0; margin: 0;">Or</p>
+                                                  </form>
+
+                                                <!-- modal_signupFragment -->
+                                                <div class="modal_signupFragment">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#"> <span><i class="fab fa-apple"></i></span>    Continue with Apple</a>
+                                                        </li>            
+                                                        <li>
+                                                            <a href="#"><span><i class="fab fa-google-plus-g"></i></span> Continue with Google</a>
+                                                        </li>                     
+                                                        <li>
+                                                            <a href="#"><span style="color:#4267B2"><i class="fab fa-facebook-f"></i></span> Continue with Facebook</a>
+                                                        </li>                       
+                                                        <li>
+                                                            <a href="continueemailsign.html"><span><i class="far fa-envelope"></i></span> Continue with email</a>
+                                                        </li>
+                                                    </ul>
+                                                    <!-- modal_btn -->
+                                                    <div class="modal_btn">
+                                                        <p>Don’t have an account?</p>
+                                                        <span><a href="signup.html">Sign up </a></span>
+                                                    </div>
+
+                                                    <div class="authFormTextAndButton">
+                                                        <p>This site is protected  by reCAPTCHA <a href="#">Privacy Policy</a>  and <a href="#">Terms of Service</a> the Google  and  apply</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                              </li>
+
+                              <li class="nav-item">
+                                <a class="nav-link bg_icon" href="#">
+                                  <i class="far fa-user-circle"></i>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                      </nav>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </section>
+    <!------============ header-wrapper  END//================= -->
+
+    <!------============ About-header-area Start================= -->
+    <section class="About-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="About_heading text-center wow pulse"data-wow-duration="2s"
+                    data-wow-iteration="100">
+                        <h1 style="color: #fff;">About Turo</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!------============ About-header-area END//================= -->
+
+    <!------============ about_commutePattern-area Start================= -->
+    <section class="about_commutePattern">
+        <div class="container">
+            <div class="ror">
+                <div class="col-md-12 col-xl-8 m-auto">
+                    <div class="about_commutePattern_content text-center">
+                        <h1 class="wow bounceInLeft">Where local hosts provide you with the perfect vehicle for your next adventure</h1>
+                        <p>Turo is a car sharing marketplace where guests can book any car they want, wherever they want it, from a vibrant community of local hosts across the US, Canada, the UK, and Germany. Guests choose from a totally unique selection of nearby cars, while hosts earn extra money to offset the costs of car ownership.</p>
+                        <p>A pioneer of the sharing economy and travel industry, Turo is a safe, supportive community over 10 million strong with more than 350,000 vehicles listed and over 850 unique makes and models. Whether it’s a truck to help out on moving day, a Mercedes-Benz for a luxurious weekend away, or a classic VW bus for a picture-perfect road trip, Turo lets you book cars that are part of a story, not a fleet.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!------============ about_commutePattern-area END//================= -->
+
+    <!------============ about-greenLight-area Start================= -->
+    <section class="about_greenLight">
+        <div class="container">
+            <div class="ror">
+                <!-- about_greenLight_heading -->
+                <div class="col-md-12 col-xl-8 m-auto">
+                    <div class="about_greenLight_heading text-center wow fadeInDown">
+                        <h1 style="color:#fff">By the numbers</h1>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <!-- itemStep-1 -->
+                    <div class="col-md-12 col-xl-8 m-auto">
+                        <div class="row">
+                            <!-- item -->
+                            <div class="col-md-6">
+                                <div class="about_greenLight_Content text-center wow bounceInRight" data-wow-duration="1s">
+                                    <div class="about_greenLight_text">
+                                        <img src="assets/images/cities_icon@2x.4a1474fa.png" class="img-fluid" alt="Responsive image">
+                                        <span>5,500+</span>
+                                        <p>cities across the US, Canada, the UK, and Germany</p>
+                                    </div>
+                                </div>
+                            </div>                            
+                            <!-- item -->
+                            <div class="col-md-6">
+                                <div class="about_greenLight_Content text-center wow bounceInRight" data-wow-duration="3s">
+                                    <div class="about_greenLight_text">
+                                        <img src="assets/images/globe_white@2x.3dda54f6.png" class="img-fluid" alt="Responsive image">
+                                        <span>56</span>
+                                        <p>countries</p>
+                                    </div>
+                                </div>
+                            </div>                           
+                        </div>
+                    </div> 
+                    <!-- itemStep-2 -->
+                    <div class="col-md-12 col-xl-10 m-auto">
+                        <div class="row">
+                              <!-- item -->
+                              <div class="col-md-4">
+                                <div class="about_greenLight_Content text-center wow bounceInRight"data-wow-duration="6s">
+                                    <div class="about_greenLight_text">
+                                        <img src="assets/images/cars_icon@2x.c34ade52.png" class="img-fluid" alt="Responsive image">
+                                        <span>850+</span>
+                                        <p>makes & models, often delivered directly to you</p>
+                                    </div>
+                                </div>
+                            </div>                             
+                            <!-- item -->
+                            <div class="col-md-4">
+                                <div class="about_greenLight_Content text-center wow bounceInRight" data-wow-duration="8s">
+                                    <div class="about_greenLight_text">
+                                        <img src="assets/images/dollar_sign_icon@2x.fba2e4fa.png" class="img-fluid" alt="Responsive image">
+                                        <span>US$500+ /mo</span>
+                                        <p>average owner earnings</p>
+                                    </div>
+                                </div>
+                            </div>                            
+                            <!-- item -->
+                            <div class="col-md-4">
+                                <div class="about_greenLight_Content text-center wow bounceInRight" data-wow-duration="10s">
+                                    <div class="about_greenLight_text">
+                                        <img src="assets/images/dollar_signs_icon@2x.e532f97c.png" class="img-fluid" alt="Responsive image">
+                                        <span>US$3,000+ /mo</span>
+                                        <p>average earnings for owners with 3+ cars</p>
+                                    </div>
+                                </div>
+                            </div>                          
+                        </div>
+                    </div>
+                    <!-- itemStep-3 -->
+                    <div class="col-md-12 col-xl-8 m-auto">
+                        <div class="row">
+                            <!-- item -->
+                            <div class="col-md-6">
+                                <div class="about_greenLight_Content text-center wow bounceInLeft" data-wow-duration="7.5s">
+                                    <div class="about_greenLight_text">
+                                        <img src="assets/images/money_icon@2x.a4b06889.png" class="img-fluid" alt="Responsive image">
+                                        <span>Up to 35%</span>
+                                        <p>less than traditional car rental agencies</p>
+                                    </div>
+                                </div>
+                            </div>                            
+                            <!-- item -->
+                            <div class="col-md-6">
+                                <div class="about_greenLight_Content text-center wow bounceInLeft" data-wow-duration="6.5s">
+                                    <div class="about_greenLight_text">
+                                        <img src="assets/images/icon-protection@2x.4297f2ac.png" class="img-fluid" alt="Responsive image">
+                                        <span>US$1 million</span>
+                                        <p>Up to US$1M in Liberty Mutual liability insurance offered through Turo Insurance Agency in the US.</p>
+                                    </div>
+                                </div>
+                            </div>                           
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </section>
+    <!------============ about-greenLight-area END//================= -->
+
+    <!------============ About-banner-area Start================= -->
+    <section class="About-banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="Aboutbanner_heading text-center wow fadeInDown" data-wow-duration="3s">
+                        <img src="assets/images/Turo_logo2.png" class="img-fluid" alt="Responsive image">
+                        <h1 style="color: #fff;">Way better than a rental car</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!------============ About-banner-area END//================= -->
+
+    <!----============= footer-area Start ================ -->
+    <section class="footer-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-xl-10 m-auto">
+                    <div class="row">
+                        <!-- footer_content -->
+                        <div class="col-sm-6 col-md-4 col-xl-4">
+                            <div class="footer_content">
+                                <div class="footer_address">
+                                    <h4>Corporate Office :</h4>
+                                    <p>
+                                        48, KaziNazrul Islam Avenue, Karwan Bazar, Dhaka-1215, Bangladesh.                                       <br>                                    <span>Phone :  +8801722158130, +8801709372481</span>
+                                    </p>
+                                </div>                                
+                                <div class="footer_address">
+                                    <h4>Support Center :</h4>
+                                    <p>
+                                        12/6, Solimullah Road, Mohammadpur, Dhaka 1207, Bangladesh.   <br>                                    <span>Phone :  +8801722158130, +8801709372481</span>
+                                    </p>
+                                </div>                                
+                            </div>
+                        </div>
+
+                        <!-- footer_content -->
+                        <div class="col-sm-6 col-md-4 col-xl-5">
+                            <div class="facebook_page" style="margin-top:30px">
+                                <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fpg/codinghunters35&tabs&width=380&height=185&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="100%" height="200" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+                            </div>
+                        </div>
+
+                        <!-- footer_content -->
+                        <div class="col-sm-6 col-md-4 col-xl-3">
+                            <div class="footer_content text-center">
+                                <div class="footer_title">
+                                    <ul class="footer_icon d-flex  justify-content-center" >
+                                        <li>
+                                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="fab fa-twitter"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="fab fa-instagram"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="fab fa-youtube"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- footer_logolist -->
+                                <ul class="footer_logolist d-flex">
+                                    <a href="#">
+                                        <img src="assets/images/app-store-badge-en.svg"  class="img-fluid" alt="Responsive image">
+                                    </a>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- copy -->
+                <div class="col-md-12">
+                    <div class="copy">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-6 col-xl-4 m-auto">
+                                <ul class="footer_list d-flex">
+                                    <li><a href="#"> ©2020 Turo </a></li>
+                                    <li><a href="about.html"> About </a></li>
+                                    <li><a href="team.html"> Teams </a></li>
+                                    <li><a href="404.html"> Privacy </a></li>
+                                    <li><a href="404.html"> Sitemap </a></li>
+                                </ul>
+                            </div>
+
+                            <div class="col-sm-12col-md-6 col-xl-6">
+                                <ul class="footer_list d-flex">
+                                    <a href="#">
+                                        <span><i class="fa fa-angle-up" aria-hidden="true"></i></span>
+                                        <span>&nbsp;<img src="assets/images/english-us-selected.png" class="img-fluid" alt="Responsive image"></span>
+                                        <span>&nbsp; English (USA)</span>
+                                    </a>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!----============= footer-area Start ================ -->
+
+
+ <!-- Jquery & Jquery-ui JS -->
+<script type="text/javaScript" src="assets/js/jquery.js"></script>
+<script type="text/javaScript" src="assets/js/jquery-ui.min.js"></script>
+<!-- Bootstrap JS -->
+<script type="text/javaScript" src="assets/js/bootstrap.min.js"></script>
+<!-- Fontawesome JS -->
+<script type="text/javaScript" src="assets/js/fontawesome.min.js"></script>
+<!-- owl.carousel js -->
+<script type="text/javaScript" src="assets/js/owl.carousel.min.js"></script>
+<script type="text/javaScript" src="assets/js/owl.carousel.custom.js"></script>
+<!-- javascript-all.custom js-->
+<script type="text/javaScript" src="assets/js/javascript.custom.js"></script>
+<!-- typed js -->
+<script type="text/javaScript" src="assets/js/typed.js"></script>
+<script type="text/javaScript" src="assets/js/typed.custom.js"></script>
+<!-- scroll -->
+<script type="text/javaScript" src="assets/js/scroll.js"></script>
+<!-- wow.min -->
+<script type="text/javaScript" src="assets/js/wow.min.js"></script>
+<script type="text/javaScript" src="assets/js/wow.script.js"></script>
+</body>
+</html>

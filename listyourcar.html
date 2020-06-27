@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="author" content="ABU SAYED">
+    <!-- favicon css -->
+    <link rel="icon" href="assets/images/favicon1.ico" sizes="60x60" type="image/x-icon">
+    <!-- Site Title css -->
+    <title>List your car</title>
+
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Fontawesome CSS -->
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <!-- Jquery-ui CSS -->
+    <link rel="stylesheet" href="assets/css/jquery-ui.min.css">
+    <!-- wow.animate CSS -->
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <!-- owl.carousel CSS -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+    
+    <section class="">
+      <div class="hader_top">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-12">
+                      <nav class="navbar navbar-expand-lg navbar-light bgnav_color">
+                        <!-- site_logo Start -->
+                          <div class="site_logo col-md-2">
+                              <a class="navbar-brand" href="index.html">
+                                  <img  src="assets/images/Turo_logo2.png" class="img-fluid" alt="Responsive image">
+                              </a>
+                          </div>
+                          <!-- Site_logo END// -->
+
+                          <!-- headersearchbarmenu -->
+                          <div class="searchbararea headersearchbarmenu">
+                            <div class="header_searchbar headersearchbar">
+                                <div onfocusout='hideOptions()'>
+                                    <span style="color:#59d389; top:37px; position:absolute;">Where</span>
+                                    <input type = "text" id = "insertText" autocomplete="off" placeholder="City, airport, address, or hotel" onkeyup = "if (event.keyCode == 13) {SearchAddress(option1.text)} else {giveSuggestion()}" onfocus='showOptions()'/>
+
+                                    <div class="form_location_hide formlocationhide">
+                                            <option class="option" id = "option1" onmousedown = "searchAddress(option1.text)" >
+                                                <i class="fas fa-location-arrow"></i>
+                                                &nbsp; Current location
+                                            </option>
+                                            <option class="option" id = "option2" onmousedown = "searchAddress(option2.text)">
+                                                <i class="fas fa-place-of-worship"></i>
+                                                &nbsp; Los Angeles, CA</a>
+
+                                            </option>
+                                            <option class="option" id = "option3" onmousedown = "searchAddress(option3.text)">
+                                                <i class="fas fa-bus-alt"></i>
+                                                &nbsp; Union Station, Los Angeles
+                                            
+                                            </option>
+                                            <option class="option" id = "option4" onmousedown = "searchAddress(option4.text)">
+                                                <i class="fas fa-plane-departure"></i>
+                                                &nbsp; San Jose Norman Mineta airport
+                                            
+                                            </option>
+                                            <option class="option" id = "option5" onmousedown = "searchAddress(option5.text)"> 
+                                                <i class="fas fa-place-of-worship"></i>
+                                                &nbsp; Sheraton Grand, Los Angeles
+                                            </option>
+                                            <option class="option" id = "option6" onmousedown = "searchAddress(option6.text)">
+                                                <i class="fas fa-place-of-worship"></i>
+                                                &nbsp; San Francisco, CA
+                                            </option>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+
+                          <button class="navbar-toggler secondnavigation" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+
+                          <div class="collapse navbar-collapse justify-content-end navbg_color.navbg_custom_color" id="navbarNav">
+                            <ul class="navbar-nav">
+                              <li class="nav-item active">
+                                <a class="nav-link" href="listyourcar.html">List your car <span class="sr-only">(current)</span></a>
+                              </li>
+                              <div class="dropdown">
+                                <button class="dropbtn">Learn more</button>
+                                <div class="dropdown-content">
+                                    <a href="bookacare.html">Book a care</a>
+                                    <a href="carculator.html">Carculator</a>
+                                    <a href="allstarhosts.html">All star hosts</a>
+                                    <a href="hosttools.html">Host tools</a>
+                                    <a href="trustandsafety.html">Trust & safety</a>
+                                </div>
+                              </div>                          
+                              <!-- Sign up-->
+                              <li class="nav-item">
+                                <a class="nav-link" href="#" data-toggle="modal" data-target="#myModal">Sign up</a>
+                                <!-- The Modal -->
+                                <div class="modal" id="myModal">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <!-- Modal Header -->
+                                            <div class="modal-header">
+                                                <!-- <h4 class="modal-title">Modal Heading</h4> -->
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            </div>
+                                            <!-- Modal body -->
+                                            <div class="modal-body text-center">
+                                                <div class="modal_title">
+                                                    <h1>Welcome to Turo</h1>
+                                                </div>
+
+                                                <div class="modal_signupFragment">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#"> <span><i class="fab fa-apple"></i></span>    Continue with Apple</a>
+                                                        </li>            
+                                                        <li>
+                                                            <a href="#"><span><i class="fab fa-google-plus-g"></i></span> Continue with Google</a>
+                                                        </li>                     
+                                                        <li>
+                                                            <a href="#"><span style="color:#4267B2"><i class="fab fa-facebook-f"></i></span> Continue with Facebook</a>
+                                                        </li>                       
+                                                        <li>
+                                                            <a href="continueemailsign.html"><span><i class="far fa-envelope"></i></span> Continue with email</a>
+                                                        </li>
+                                                    </ul>
+                                                    <!-- modal_btn -->
+                                                    <div class="modal_btn">
+                                                        <p>Already have an account?</p>
+                                                        <span><a href="login.html">Log in </a></span>
+                                                    </div>
+
+                                                    <div class="authFormTextAndButton">
+                                                        <p>This site is protected  by reCAPTCHA <a href="#">Privacy Policy</a>  and <a href="#">Terms of Service</a> the Google  and  apply</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                              </li>
+
+                            <!-- Login Start-->
+                              <li class="nav-item">
+                                <a class="nav-link" href="#" data-toggle="modal" data-target="#myModal2" >Log in</a>
+                                <!-- The Modal -->
+                                <div class="modal" id="myModal2">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <!-- Modal Header -->
+                                            <div class="modal-header">
+                                                <!-- <h4 class="modal-title">Modal Heading</h4> -->
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            </div>
+                                            <!-- Modal body -->
+                                            <div class="modal-body text-center">
+                                                <div class="modal_title">
+                                                    <h1>Welcome back</h1>
+                                                </div>
+
+                                                <form>
+                                                    <div class="form-group">
+                                                        <label for="inputEmail4">Email</label>
+                                                        <input type="email" class="form-control" id="inputEmail4">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="inputPassword4">Password</label> <a href="#" class="float-right" style="color: #8F63F4;">Forgot your password?</a>
+                                                        <input type="password" class="form-control" id="inputPassword4">
+                                                    </div>
+
+                                                    <button type="submit" class="btn btn-primary col-md-12">Submit</button>
+
+                                                    <p style="font-weight: bold; padding: 20px 0; margin: 0;">Or</p>
+                                                  </form>
+
+                                                <!-- modal_signupFragment -->
+                                                <div class="modal_signupFragment">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#"> <span><i class="fab fa-apple"></i></span>    Continue with Apple</a>
+                                                        </li>            
+                                                        <li>
+                                                            <a href="#"><span><i class="fab fa-google-plus-g"></i></span> Continue with Google</a>
+                                                        </li>                     
+                                                        <li>
+                                                            <a href="#"><span style="color:#4267B2"><i class="fab fa-facebook-f"></i></span> Continue with Facebook</a>
+                                                        </li>                       
+                                                        <li>
+                                                            <a href="continueemailsign.html"><span><i class="far fa-envelope"></i></span> Continue with email</a>
+                                                        </li>
+                                                    </ul>
+                                                    <!-- modal_btn -->
+                                                    <div class="modal_btn">
+                                                        <p>Don’t have an account?</p>
+                                                        <span><a href="signup.html">Sign up </a></span>
+                                                    </div>
+
+                                                    <div class="authFormTextAndButton">
+                                                        <p>This site is protected  by reCAPTCHA <a href="#">Privacy Policy</a>  and <a href="#">Terms of Service</a> the Google  and  apply</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                              </li>                            
+                              <li class="nav-item">
+                                <a class="nav-link bg_icon" href="#">
+                                  <i class="far fa-user-circle"></i>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                      </nav>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </section>
+    <!------============ header-wrapper  END//================= -->
+
+    <!----============= listYourCarNew-area Start ====================-->
+    <section class="listYourCarNew-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-xl-9 m-auto">
+                    <!-- listYourCarNew_content -->
+                    <div class="listYourCarNew_content">
+                        <!-- listYourCarNew_title -->
+                        <div class="listYourCarNew_title">
+
+                            <h1>Let your car work while you <span class="typed" style="color:#885EE8"></span></h1>
+
+                            <p>Share your car whenever you’re not using it and earn an average of <span style="color: #885EE8;">$706 per month</span> on Turo, the world’s largest car sharing marketplace.</p>
+                        </div>
+                        <!-- listYourCarNew_btn -->
+                        <div class="listYourCarNew_btn">
+                            <a href="login.html">Get started</a>
+                        </div>
+                    </div>
+                    <!-- listYourCarNew_content END//  -->
+                </div>
+            </div>
+        </div>
+
+        <!-- listYourCarNew_headerHero_img -->
+        <div class="listYourCarNew_headerHero_img"></div>
+    </section>
+    <!----=============== listYourCarNew-area  END//================= -->
+    
+    <!----=============== listCNCcontent-area  END//================= -->
+    <section class="listCNCcontent-area">
+        <div class="container">
+
+            <!-- listCNCcontent_heading -->
+            <div class="row">
+                <div class="col-md-8 m-auto">
+                    <div class="listCNCcontent_heading wow fadeInDown" data-wow-duration="2s">
+                        <h1>How sharing your car works</h1>
+                    </div>
+                </div>
+            </div>
+            <!-- listCNCcontent_heading END// -->
+
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-xl-8 m-auto">
+                    <!-- listCNContent_contentsectiom -->
+                    <div class="row listCNContent_contentsectiom">
+                        <!-- listCNContent_content -->
+                        <div class="col-md-12 col-xl-7">
+                            <div class="listCNContent_content">
+                                <div class="listCNContent_title">
+                                    <span>1</span>
+                                    <h4>List your car for free</h4>
+                                    <p>Share your truck, sports car, or anything in between. Listing takes about 10 minutes and is free — no sign-up charges, no monthly fees.</p>
+                                </div>
+                                <!-- listCNContent_title-->
+                                <div class="listCNContent_title">
+                                    <span>2</span>
+                                    <h4>List your car for free</h4>
+                                    <p>Share your truck, sports car, or anything in between. Listing takes about 10 minutes and is free — no sign-up charges, no monthly fees.</p>
+                                </div>
+                                <!-- listCNContent_title-->
+                                <div class="listCNContent_title">
+                                    <span>3</span>
+                                    <h4>List your car for free</h4>
+                                    <p>Share your truck, sports car, or anything in between. Listing takes about 10 minutes and is free — no sign-up charges, no monthly fees.</p>
+                                </div>
+                                <!-- listCNContent_title-->
+                                <div class="listCNContent_title">
+                                    <span>4</span>
+                                    <h4>List your car for free</h4>
+                                    <p>Share your truck, sports car, or anything in between. Listing takes about 10 minutes and is free — no sign-up charges, no monthly fees.</p>
+                                </div>
+                            </div>
+
+                            <!-- listCNContent_footer -->
+                            <div class="listCNContent_footer">
+                                <p>Get all your questions answered in the <a href="#" >Help Center for hosts.</a></p>
+                            </div>
+                        </div>
+
+                        <!-- listCNC_contentright_img -->
+                        <div class="col-sm-12 col-md-12 col-xl-5">
+                            <div class="listCNC_contentright_img">
+                                <img src="assets/images/keyHandoff.616327da.jpg" class="img-fluid" alt="Responsive image">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- listCNContent_contentsectiom END//-->
+
+
+                    <!-- item-2 -->
+                    <!-- listCNContent_contentsectiom_2 -->
+                    <div class="row listCNContent_contentsectiom_2">
+                        <!-- listCNC_contentLeft_img -->
+                        <div class="col-sm-12 col-md-12 col-xl-5">
+                            <div class="listCNC_contentLeft_img">
+                                <img src="assets/images/keyHandoff.616327da.jpg" class="img-fluid" alt="Responsive image">
+                            </div>
+                        </div>
+                        <!-- listCNContent_content_2 start-->
+                        <div class="col-sm-12 col-md-12 col-xl-7">
+                            <div class="listCNContent_content ">
+                            <div class="listCNContent_content_2 wow fadeInRight" data-wow-duration="2s">
+                                <div class="listCNContent_content2_img">
+                                    <img src="assets/images/ic_shield.e649ecdf.png" class="img-fluid" alt="Responsive image">
+                                </div>
+
+                                <div class="listCNContent_content2_heading">
+                                    <h1>You’re covered</h1>
+                                </div>
+
+                                <!-- listCNContent_title-->
+                                <div class="listCNContent2_title">
+                                    <h4>$1 million liability insurance</h4>
+                                    <p>Share your truck, sports car, or anything in between. Listing takes about 10 minutes and is free — no sign-up charges, no monthly fees.</p>
+                                </div>
+                                 <!-- listCNContent_title-->
+                                <div class="listCNContent2_title">
+                                    <h4>Physical damage protection</h4>
+                                    <p>Share your truck, sports car, or anything in between. Listing takes about 10 minutes and is free — no sign-up charges, no monthly fees.</p>
+                                </div>
+
+                                <!-- listCNContent_footer -->
+                                <div class="listCNContent2_footer">
+                                    <a href="#" >Learn more about protection plans</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- listCNContent_contentsectiom_2 END//-->
+                </div>
+            </div>
+        </div>
+    </section>
+     <!----=============== listCNCcontent-area  END//================= -->
+
+    <!----=============== listYC-BackContentItem-area  END//================= -->
+     <section class="listYC-BackContentItem-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-md-12 col-xl-8 m-auto">
+                    <div class="row listYC-BackContentItem-conteent">
+                        <div class="col-md-12">
+                            <div class="listYC-BackContentItem-heading wow fadeInDown">
+                                <h1 class="text-center">We’ve got your back</h1>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="row listCNContent">
+                                <div class="col-sm-6 col-md-6 col-xl-4">
+                                    <!-- listCNContent_title-->
+                                    <div class="listCNContent_title wow fadeInLeft" data-wow-duration="2s">
+                                        <img src="assets/images/ic_globe.8e534e9f.png" class="img-fluid" alt="Responsive image">
+                                        <h4>List your car for free</h4>
+                                        <p>Share your truck, sports car, or anything in between. Listing takes about 10 minutes and is free — no sign-up charges, no monthly fees.</p>
+                                    </div>
+                                </div>   
+                                <!-- listCNContent_title-->
+                                <div class="col-sm-6 col-md-6 col-xl-4">
+                                    <div class="listCNContent_title wow fadeInUp" data-wow-duration="3s">
+                                        <img src="assets/images/ic_support.95d7b40a.png" class="img-fluid" alt="Responsive image">
+                                        <h4>List your car for free</h4>
+                                        <p>Share your truck, sports car, or anything in between. Listing takes about 10 minutes and is free — no sign-up charges, no monthly fees.</p>
+                                    </div>
+                                </div>
+                                <!-- listCNContent_title-->
+                                <div class="col-sm-6 col-md-6 col-xl-4">
+                                    <div class="listCNContent_title wow fadeInRight" data-wow-duration="4s">
+                                        <img src="assets/images/ic_star.f069317d.png" class="img-fluid" alt="Responsive image">
+                                        <h4>List your car for free</h4>
+                                        <p>Share your truck, sports car, or anything in between. Listing takes about 10 minutes and is free — no sign-up charges, no monthly fees.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="m-auto">
+                            <!-- listYourCarNew_btn -->
+                            <div class="listYourCarNew_btn">
+                                <a href="login.html">List your car</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+    <!----=============== listYC-BackContentItem-area  END//================= -->
+
+    <!----=============== listYC-video-area  END//================= -->
+    <section class="listYC-video-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-xl-8 m-auto">
+                    <div class="listYC-video_heading text-center">
+                        <h1>What hosts are saying</h1>
+                    </div>
+
+                    <div class="listYCvideo">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+
+                    <h5 class="text-center"> Turo host and super dad Okey Obie discovered Turo when he was between jobs and now shares his car to cover his family’s bills.</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!----=============== listYC-video-area  END//================= -->
+
+    <!----=============== listYC-video-area  END//================= -->
+    <section class="listYCPortfolio-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-xl-9 m-auto">
+                    <div class="row">
+                        <!-- listYCPortfolio_content -->
+                        <div class="col-md-5">
+                            <div class="listYCPortfolio_content wow fadeInLeft" data-wow-duration="2s">
+                                <div class="listYCPortfolio_photo text-center">
+                                    <img src="assets/images/hostProfile-natasha.1f42be80.jpg" class="img-fluid text-center" alt="Responsive image">
+                                </div>
+
+                                <div class="listYCPortfolio_text">
+                                    <i class="fas fa-quote-left icon"></i>
+                                    <p>I share my Mustang on Turo to help pay my bills while I finish up grad school. Plus, I get to make cool connections with my guests, and it’s exciting to know someone else is having fun with my car.</p>
+                                    <span> <b>Natasha B. </b> - San Francisco, CA</span>
+                                </div>
+                            </div>
+                        </div> 
+
+                        <!-- listYCPortfolio_quoteDivider -->
+                        <div class="listYCPortfolio_quoteDivider"></div>
+
+                        <!-- listYCPortfolio_content -->
+                        <div class="col-md-5">
+                            <div class="listYCPortfolio_content wow fadeInRight" data-wow-duration="4s">
+                                <div class="listYCPortfolio_photo text-center">
+                                    <img src="assets/images/hostProfile-cyrus.2bc47695.jpg" class="img-fluid text-center" alt="Responsive image">
+                                </div>
+
+                                <div class="listYCPortfolio_text">
+                                    <i class="fas fa-quote-left icon"></i>
+                                    <p>I share my Mustang on Turo to help pay my bills while I finish up grad school. Plus, I get to make cool connections with my guests, and it’s exciting to know someone else is having fun with my car.</p>
+                                    <span> <b>Natasha B. </b> - San Francisco, CA</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!----=============== listYC-video-area  END//================= -->
+
+    <!----=============== listYCBlog-area  END//================= -->
+    <section class="listYCBlog-area">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-xl-12">
+                    <div class="row listYCBlog">
+                        <!-- listYCBlog_content -->
+                        <div class="ccol-sm-12 col-md-6 col-xl-4">
+                            <div class="listYCBlog_content wow fadeInLeft" data-wow-duration="2s">
+                                <div class="listYCBlog_text">
+                                    <p>“Car-sharing offers an alternative to individual car ownership and traditional car rental companies.”</p>
+                                </div>
+                                <div class="listYCBlog_photo">
+                                    <img src="assets/images/associated-press.94c21db1.png" class="img-fluid" alt="Responsive image">
+                                </div>
+                            </div>
+                        </div>                         
+                        <!-- listYCBlog_content -->
+                        <div class="ccol-sm-12 col-md-6 col-xl-4">
+                            <div class="listYCBlog_content wow fadeInUp" data-wow-duration="3s">
+                                <div class="listYCBlog_text">
+                                    <p>“Car owners in the [Turo] program can recoup hundreds of dollars a month to offset car payments, insurance and other costs of ownership.”</p>
+                                </div>
+                                <div class="listYCBlog_photo">
+                                    <img src="assets/images/new-york-times.86d82f61.png" class="img-fluid" alt="Responsive image">
+                                </div>
+                            </div>
+                        </div>                         
+                        <!-- listYCBlog_content -->
+                        <div class="col-sm-12 col-md-6 col-xl-4">
+                            <div class="listYCBlog_content wow fadeInRight" data-wow-duration="4s">
+                                <div class="listYCBlog_text">
+                                    <p>“The peer-to-peer (P2P) car sharing industry is not only looking to change the way we think about vehicle ownership, but also how we travel.”</p>
+                                </div>
+                                <div class="listYCBlog_photo">
+                                    <img src="assets/images/fox-business.c8cc3af2.png" class="img-fluid" alt="Responsive image">
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!----=============== listYCBlog-area  END//================= -->
+
+    <!----=============== listYC-video-area  END//================= -->
+    <section class="listYC-footer-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-xl-8 m-auto">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <div class="listYCfooter_content wow bounceInLeft" data-wow-duration="2s">
+                                <h1>List your car today</h1>
+                                <p>Join hundreds of thousands of hosts on Turo and start earning tomorrow.</p>
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-5 m-auto">
+                            <!-- listYourCarNew_btn -->
+                            <div class="listYourCarNew_btn float-right wow bounceInRight" data-wow-duration="3s">
+                                <a href="login.html">Get started</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!----=============== listYC-video-area  END//================= -->
+
+    <!----============= footer-area Start ================ -->
+    <section class="footer-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-xl-10 m-auto">
+                    <div class="row">
+                        <!-- footer_content -->
+                        <div class="col-sm-6 col-md-4 col-xl-4">
+                            <div class="footer_content">
+                                <div class="footer_address">
+                                    <h4>Corporate Office :</h4>
+                                    <p>
+                                        48, KaziNazrul Islam Avenue, Karwan Bazar, Dhaka-1215, Bangladesh.                                       <br>                                    <span>Phone :  +8801722158130, +8801709372481</span>
+                                    </p>
+                                </div>                                
+                                <div class="footer_address">
+                                    <h4>Support Center :</h4>
+                                    <p>
+                                        12/6, Solimullah Road, Mohammadpur, Dhaka 1207, Bangladesh.   <br>                                    <span>Phone :  +8801722158130, +8801709372481</span>
+                                    </p>
+                                </div>                                
+                            </div>
+                        </div>
+
+                        <!-- footer_content -->
+                        <div class="col-sm-6 col-md-4 col-xl-5">
+                            <div class="facebook_page" style="margin-top:30px">
+                                <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fpg/codinghunters35&tabs&width=380&height=185&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="100%" height="200" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+                            </div>
+                        </div>
+
+                        <!-- footer_content -->
+                        <div class="col-sm-6 col-md-4 col-xl-3">
+                            <div class="footer_content text-center">
+                                <div class="footer_title">
+                                    <ul class="footer_icon d-flex  justify-content-center" >
+                                        <li>
+                                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="fab fa-twitter"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="fab fa-instagram"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="fab fa-youtube"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- footer_logolist -->
+                                <ul class="footer_logolist d-flex">
+                                    <a href="#">
+                                        <img src="assets/images/app-store-badge-en.svg"  class="img-fluid" alt="Responsive image">
+                                    </a>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- copy -->
+                <div class="col-md-12">
+                    <div class="copy">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-6 col-xl-4 m-auto">
+                                <ul class="footer_list d-flex">
+                                    <li><a href="#"> ©2020 Turo </a></li>
+                                    <li><a href="about.html"> About </a></li>
+                                    <li><a href="team.html"> Teams </a></li>
+                                    <li><a href="404.html"> Privacy </a></li>
+                                    <li><a href="404.html"> Sitemap </a></li>
+                                </ul>
+                            </div>
+
+                            <div class="col-sm-12col-md-6 col-xl-6">
+                                <ul class="footer_list d-flex">
+                                    <a href="#">
+                                        <span><i class="fa fa-angle-up" aria-hidden="true"></i></span>
+                                        <span>&nbsp;<img src="assets/images/english-us-selected.png" class="img-fluid" alt="Responsive image"></span>
+                                        <span>&nbsp; English (USA)</span>
+                                    </a>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!----============= footer-area Start ================ -->
+
+ <!-- Jquery & Jquery-ui JS -->
+<script type="text/javaScript" src="assets/js/jquery.js"></script>
+<script type="text/javaScript" src="assets/js/jquery-ui.min.js"></script>
+<!-- Bootstrap JS -->
+<script type="text/javaScript" src="assets/js/bootstrap.min.js"></script>
+<!-- Fontawesome JS -->
+<script type="text/javaScript" src="assets/js/fontawesome.min.js"></script>
+<!-- owl.carousel js -->
+<script type="text/javaScript" src="assets/js/owl.carousel.min.js"></script>
+<script type="text/javaScript" src="assets/js/owl.carousel.custom.js"></script>
+<!-- javascript-all.custom js-->
+<script type="text/javaScript" src="assets/js/javascript.custom.js"></script>
+<!-- typed js -->
+<script type="text/javaScript" src="assets/js/typed.js"></script>
+<script type="text/javaScript" src="assets/js/typed.custom.js"></script>
+<!-- scroll -->
+<script type="text/javaScript" src="assets/js/scroll.js"></script>
+<!-- wow.min -->
+<script type="text/javaScript" src="assets/js/wow.min.js"></script>
+<script type="text/javaScript" src="assets/js/wow.script.js"></script>
+</body>
+</html>

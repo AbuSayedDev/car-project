@@ -1,0 +1,1262 @@
+/* 769px and 991px */
+@media only screen 
+  and (min-width: 992px) 
+  and (max-width: 1200px) {
+
+/*book a car*/
+  .bookacareimage {
+    padding: 80px 0 0 50px;
+  }
+
+  /* about */
+  .footer_list{
+    justify-content: center;
+    padding: 10px 0;
+  }
+  /* allstarhosts page */
+  .allstarhostsblock_heading {
+    padding: 0px 0;
+  }
+}
+
+
+
+/* 769px and 991px */
+@media only screen 
+  and (min-width: 769px) 
+  and (max-width: 991px) {
+    .header_content .header_heading h1 {
+      font-size: 45px;
+      color: #fff;}
+    .site_logo{
+      width: 40%;}
+    .searchResults {
+      margin-top: 254px;}
+    .searchbararea{
+      margin-bottom: 50px;}
+
+    /* headersearchbarmenu */
+    .headersearchbarmenu{
+      display: none;}
+
+    .header_searchbar input {
+      margin: 32px 0px 0;}
+
+    /* searchFilterBar_content */
+    .searchFilterBar_content {
+      margin-top: 5%;
+      z-index: 1;
+      position: absolute;
+      width: 100%;
+      background: #fff;
+      top: -3px;}
+
+    /* header_form */
+    .header_content .header_form_color {
+      border-radius: 10px;}
+    .header_content {
+      top: 8%}
+    .line {
+      display: none;}
+    .header_form_area {
+      width: 100%;
+      border-bottom: 1px solid #999;}
+    .btnsearch button {
+      width: 100%;
+      position: relative;
+      top: 0;
+      right: 0;
+      border-radius: 0;}
+    .btnsearch{
+      width: 100%;
+      padding: 10px 0;}
+    .pat {
+      padding-right: 0;}
+    .Right_title{
+      margin-top: 30px;
+      text-align: center;}
+    .Right_btn{
+      text-align: center;}
+
+    /* vehicleCard_slider_menu */
+    .owl-prev {
+      left: -17px;}
+    .owl-next {
+      right: -17px;}
+   /* imageContent_2left_Content */
+
+    .imageContent_2left_Content .Right_btn{
+      margin-bottom: 40px;}
+    .pat2 {
+      padding-left: 0;}
+
+/*book a car part*/
+  .bookacare:after{
+    height: 0px;}
+  .res_mt_30{
+    margin-top: 30px;}
+  .bookacareimage {
+    padding: 80px 0 0 50px;
+  }
+
+/*============================
+      about page
+  ============================
+*/
+    .About-header {
+      padding: 0px 0;
+    }
+    .about_commutePattern {
+      padding: 30px 0;
+    }
+    .about_greenLight {
+      padding: 50px 0;
+    }
+    .About-banner {
+      padding: 50px 0;
+    }
+    .footer_list{
+      justify-content: center;
+      padding: 10px 0;
+    }
+/*============================
+      allstarhosts page
+  ============================
+*/
+    .allstarhostsbanner {
+      height: 315px;}
+    .allstarhostsblock_content2 {
+      padding: 50px 0 0 0;}
+
+/*============================
+      bookacare page
+  ============================
+*/
+  .bookacare-area {
+    padding: 50px 0 0 0;}
+  .bookacare_photo img {
+    top: 0px;}
+  .bookacareSlider_content{
+    text-align:center;}
+  .listYCPortfolio_quoteDivider {
+    margin: 0 30px}
+  .bookacare_faqItems h1{
+      text-align: center;}
+  .bookacare-banner_content {
+    padding: 50px;}
+  .bookacare-banner_content button {
+    margin-top: 5px;}
+  .bookacareRecent_heading{
+      text-align: center;}
+
+/*============================
+      carculator page
+  ============================*/
+  .carculetor-header {
+    height: 550px;}
+  .CalculatorSlider .owl-prev {
+    width: 35px;
+    border-radius: 0% !important;
+    left: -5px;}
+  .CalculatorSlider .owl-next {
+    width: 35px;
+    border-radius: 0% !important;
+    right: -5px;}
+  .Calculatorbanner {
+    height: 300px;}
+  .Calculatorbanner2 {
+      padding: 30px 0;}
+  .Calculatorbanner2_text {
+    padding: 40px 20px;}
+
+/*============================
+      about page
+  ============================*/
+  .mortymobilebannerImg {
+    height: 300px;}
+  .mortymobileMortytextarea {
+    padding: 50px 0 0 0;}
+
+/*=========================
+      singup & login Page
+=========================*/
+  .singup, .login {
+    padding: 50px 0;}
+  .modal_btn {
+    padding: 28px 0;}
+  .modal_title {
+    padding: 20px 0;} 
+  .loginor{
+    margin: 0;
+    padding: 20px 0}
+
+/*=========================
+      team Page
+=========================*/
+  .team-header {
+    height:auto;
+    text-align: center;}
+  .team_heading{
+    text-align: center;}
+  .tembannerContent {
+    padding: 50px;
+    margin: 20px 0;}
+  .teamBoardcontent {
+    padding: 20px 0;}
+
+ /*============================
+      classiccarrental page
+  ============================*/ 
+  
+  .classic-header {
+    height: 610px;}
+  .bookacareSlider_content{
+    margin-top: 40px;}
+  .classicCarModel {
+    padding: 0px 0 0 0;}
+  .classictopCities_slider{
+    padding: 40px 0;}
+  .classicCarModel_title {
+    padding: 0 0 30px 0;}
+
+  /*============================
+      beverlyhillscare page
+  ============================
+*/
+.beverlyhillscareProduct-slider {
+  padding: 30px 0 0 0;}
+
+}
+
+
+/* 481px and 768px */
+@media only screen 
+  and (min-width: 481px) 
+  and (max-width: 768px) {
+  .site_logo{
+      width: 35%;}
+  .searchbaricon{
+    position: absolute;
+    top: 0;}
+  .searchbararea{
+    margin-bottom: 50px;}
+  .formlocationhide{
+    top: 50px !important;}
+  .header_searchbar input {
+    margin: 10px 0;}
+  .headersearchbar span{
+    top: 15px !important;}
+    
+  /* header_content */
+  .header_content .header_heading h1 {
+    font-size: 32px;}
+  .header_content .header_heading h6 {
+    font-size: 18px;}
+
+  /* header_form */
+  .header_content .header_form_color {
+    border-radius: 10px;}
+  .header_content {
+    top: 8%;}
+  .line {
+    display: none;}
+  .header_form_area {
+    width: 100%;
+    border-bottom: 1px solid #999;}
+  .btnsearch button {
+    width: 100%;
+    position: relative;
+    top: 0;
+    right: 0;
+    border-radius: 0;}
+  .btnsearch{
+    width: 100%;
+    padding: 10px 0;}
+
+
+  /* headersearchbarmenu */
+  .headersearchbarmenu{
+    display: none;}
+
+
+  /* u-alignCenter */
+  .u-alignCenter .u_alignCenter_heading h1 {
+    font-size: 23px;}
+  .u_alignCenter_service{
+    flex-direction: column;
+    text-align: center;}
+  .u_alignCenter_content .u_alignCenter_content_img {
+    margin-right: 0px;
+    padding: 20px 0;}
+  .u_alignCenter_content .u_alignCenter_service {
+    margin-top: 20px !important;}
+
+  /* rentalCategory_slider_menu */
+  .rentalCategory_slider_menu .item {
+    width: 230px !important;}
+  .rentalCategory_slider_menu .owl-next {
+    width: 28px;
+    right: -8px;
+    border-radius: 0% !important;}
+  .rentalCategory_slider_menu .owl-prev {
+    width: 28px;
+    border-radius: 0% !important;
+    left: -6px;}
+
+  /* vehicleCard_slider_menu */
+  .vehicleCard_slider_menu .owl-next {
+    width: 28px;
+    right: 33px;
+    top: 29%;
+    border-radius: 0% !important;}
+  .vehicleCard_slider_menu .owl-prev {
+    width: 28px;
+    border-radius: 0% !important;
+    left: -5px;
+    top: 29%;}
+
+  /* topCities_slider_menu */
+  .topCities_slider_menu .item {
+    width: 180px !important;}
+  .topCities_slider_menu .owl-prev {
+    left: -18px;}
+  .topCities_slider_menu .owl-next {
+    right: -18px;}
+  .topCities-slider {
+    padding: 10px 0;}
+
+  /* imageContent-area */
+  .pat {
+    padding-right: 0;}
+  .Right_title{
+    margin-top: 30px;
+    text-align: center;}
+  .Right_btn{
+    text-align: center;}
+  .Right_title h1 {
+    font-size: 36px;}
+  .imageContent_1, .imageContent_2 {
+    margin-bottom: 30px;}
+
+  /* imageContent_2left_Content */
+
+  .imageContent_2left_Content .Right_btn{
+    margin-bottom: 40px;}
+  .pat2 {
+    padding-left: 0;}
+  .imageContent{
+    text-align: center;}
+  .footer_list{
+    padding: 15px 0;}
+
+/*======================================
+      productsearch Page
+  ======================================
+*/
+  .searchFilterBar_content{
+    display: none;}
+  .header{
+    position: relative;;}
+  .searchResults {
+    margin-top: 40px;}
+  .map{
+    top: 37px;
+    position: relative;}
+
+/*book a car part*/
+  .bookacare:after{
+    height: 0px;}
+  .res_mt_30{
+    margin-top: 30px;}
+  .bookacareimage {
+    padding: 50px 0 0 40px;}
+
+/*============================
+      about page
+  ============================
+*/
+  .About-header {
+      padding: 0px 0;}
+  .about_commutePattern {
+    padding: 35px 0;}
+  .about_greenLight {
+    padding: 40px 0;}
+  .about_commutePattern_content h1{
+    font-size: 35px;}
+  .about_greenLight_Content {
+    height: 300px;}
+  .About-banner {
+    padding: 50px 0;}
+  .Aboutbanner_heading img {
+    max-width: 50%;}
+  .Aboutbanner_heading h1{
+    font-size: 35px;}
+
+/* footer page*/
+  .footer_list{
+    justify-content: center;
+    padding: 10px 0;}
+
+/*============================
+      allstarhosts page
+  ============================
+*/
+  .allstarhosts-header {
+    padding: 35px 0px;}
+  .allstarhostsblock_heading {
+      padding: 60px 0 15px 0;} 
+  .allstarhostsblock-2 {
+      margin-bottom: 20px;}
+  .allstarhostsblock_service_content, .allstarhostsblock_service_content p {
+      text-align: center; }
+  .allstarhostsbanner {
+      height: 300px;}
+
+/*============================
+      bookacare page
+  ============================
+*/
+  .bookacare-area {
+     padding: 40px 0 0 0;}
+  .bookacare_photo img {
+     top: 0px;}
+  .bookacareSlider .owl-prev {
+      width: 35px;
+      border-radius: 0% !important;
+      left: -5px;}
+  .bookacareSlider .owl-next {
+      width: 35px;
+      border-radius: 0% !important;
+      right: -5px;}
+  .bookacareSlider_content{
+    text-align:center;}
+  .bookacareimage_heading h1 {
+      text-align:center;
+      margin: 25px 0;}
+  .bookacareimage_content{
+    text-align: center;}
+  .bookacareimage_right {
+    height: 300px;}
+  .youreCovered {
+      padding: 20px 0;}
+  .youreCovered_content {
+    margin-left: 0px;
+    text-align: center;}
+  .listYCPortfolio_content {
+      padding: 10px 0;
+      text-align: center;}
+  .listYCPortfolio-area {
+    margin-bottom: 0px;}
+  .bookacare_faqItems h1{
+    text-align: center;
+    font-size: 40px;}
+  .bookacare_faqItems {
+      padding: 10px 0;}
+  .bookacare-banner_content button {
+    margin-top: 5px;}
+  .bookacare-banner_content {
+      padding: 50px;}
+  .bookacare-banner_content{
+    font-size: 36px;}
+  .bookacareRecent_heading{
+    text-align: center;}
+  .bookacareRecent_content {
+      text-align: center;}
+  .bookacareRecent_photo{
+    text-align: center;
+    width: 100%;
+    margin: 10px 0;
+  }
+/*============================
+      carculator page
+  ============================
+*/
+  .carculetor-header {
+    height: 550px;}
+  .CalculatorSlider .owl-prev {
+    width: 35px;
+    border-radius: 0% !important;
+    left: -5px;}
+  .CalculatorSlider .owl-next {
+    width: 35px;
+    border-radius: 0% !important;
+    right: -5px;}
+  .CalculatorSlider .owl-stage{
+    width: 30000px !important;}  
+  .CalculatorSlider .item{
+    width: 452px !important;}
+  .CalculatorSlider_text h6 {
+      margin-top: 22%;}
+  .Calculatorbanner {
+    height: 300px;}
+  .Calculatorbanner2 {
+      padding: 30px 0;}
+  .Calculatorbanner2_text {
+    padding: 55px 20px;}
+
+/*============================
+      hosttools page
+  ============================
+*/
+  .hosttools-header {
+    height: 300px;}
+  .hosttool-Community {
+    padding: 40px 0 0 0;}
+  .hosttoolCommunity_heading h1 {
+    font-size: 45px;}
+  .hosttoolvideo_content {
+    padding: 40px 0;}
+  .hosttoolvideo_content h1{
+    font-size: 40px;}
+  .hosttooldownload_content {
+    padding: 50px;}
+  .hosttooldownload_content h1 {
+    font-size: 42px;}
+  .hosttool-Protips {
+    padding: 30px 0;}
+  .hosttool-Additional {
+    padding: 40px 0 0 0;}
+  .hosttoolqus_btn a {
+    padding: 10px 30px;}
+
+/*============================
+      listyourcar page
+  ============================
+*/
+  .listYourCarNew_title h1 {
+    font-size: 45px;}
+  .listYourCarNew_headerHero_img {
+    height: 300px;
+    margin-bottom: 10px;}
+  .listCNContent_contentsectiom {
+    padding: 20px 0 0 0;}
+  .listCNContent_footer {
+    padding: 5px 0;}
+  .listCNC_contentright_img {
+    margin-top: 20px;}
+  .listCNContent_content_2{
+    text-align: center;
+    margin-top: 30px;}
+  .listCNContent_content2_heading h1 {
+    padding: 00px 0;}
+  .listYC-BackContentItem-conteent {
+    padding: 5px 0;
+    text-align: center;}
+  .listYC-BackContentItem-heading h1, .listYC-video_heading h1{
+    font-size: 45px;}
+  .listYCvideo {
+      padding: 15px 0;}
+  .listYCPortfolio_text{
+    margin-top: 20px;}
+  .listYC-footer-area {
+    padding: 0 0 50px;}
+  .listYourCarNew_btn {
+      width: 100%;
+      float: none !important;
+      text-align: center;}
+
+/*============================
+      mortymobilebanner page
+  ============================
+*/
+  .mortymobilebannerImg {
+    height: 300px;}
+  .mortymobileMortytextarea {
+    padding: 50px 0 0 0;}
+  .mortymobileDrive_content{
+    text-align: center;
+    margin-top: 50px;}
+  .mortymobileMortyContemt {
+    text-align: center;}
+  .mortymobileMorty_photo {
+    width: 100%;}
+  .mortymobileMorty_text{
+    text-align: center;
+    width: 100%;}
+  .mortymobileMortyphoto img {
+    width: 100%;
+    padding: 20px 0;}
+  .mortyTuro_content{
+    text-align: center;}
+
+/*
+=========================
+      Nocarsfound Page
+=========================
+*/
+  .Nocarsfound {
+    margin-top: 40px;}
+  .Nocarsfound_content{
+    margin-top: 0px;} 
+/*=========================
+      singup & login Page
+=========================*/
+  .singup, .login {
+    padding: 50px 0;}
+  .modal_btn {
+  padding: 28px 0;}
+  .modal_title {
+  padding: 20px 0;} 
+  .loginor{
+    margin: 0;
+    padding: 20px 0}
+
+/*=========================
+      team Page
+=========================*/
+.team-header {
+  height:auto;
+  text-align: center;}
+.team_heading{
+  text-align: center;}
+.tembannerContent {
+  padding: 50px;
+  margin: 20px 0;}
+.teamBoardcontent {
+  padding: 20px 0;}
+.tembannerContent {
+    padding: 50px;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;}
+
+/*============================
+      classiccarrental page
+  ============================*/ 
+  .classic-header {
+    height: 610px;}
+  .bookacareSlider_content{
+    margin-top: 40px;}
+  .classicbannerleftimg img {
+    margin-top: 0px;}
+  .classicCarModel {
+    padding: 0px 0 0 0;}
+  .classicCarModel_title h1{
+    font-size: 40px;}
+  .topCities-slider .topCities_heading h2 {
+    font-size: 40px;}
+  .classicCarModel_content{
+    padding: 30px 0 0 0;}
+  .classictopCities_slider{
+    padding: 40px 0;}
+  .classicCarModel_title {
+    padding: 0 0 30px 0;}
+
+ /*============================
+      beverlyhillscare page
+  ============================
+*/
+.beverlyhillscareProduct-slider {
+  padding: 30px 0 0 0;}
+
+/*============================
+     cart page
+  ============================
+*/
+  .card-page {
+    padding: 0px 0px 30px 0px;
+  }
+  .card-area .table .card-table-heading th {
+    display: none;
+  }
+  .card-area .table .card-table-heading th:first-child {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+  .card-area .table tbody tr td {
+    display: block;
+    text-align: center;
+    width: 100%;}
+    
+
+
+/*============================
+     carrentalrustin page
+  ============================
+*/
+  .carrentalrustin-product {
+      padding: 30px 0;
+  }
+  .ctr_heading h1{
+    font-size: 36px;
+  }
+  .bhc_hosted_content {
+    padding: 40px 0 0;}
+  .carrrModelContent {
+      padding: 0px 0 20px;
+  }
+  .carrentalrustinModel2_title h1{
+    font-size: 36px;
+  }
+
+}
+
+
+/* 320px and 480px */
+@media only screen 
+  and (min-width: 320px) 
+  and (max-width: 480px) {
+  .site_logo{
+    width: 30%;}
+  .site_icon {
+    padding: 4px 0;
+    float: right;}
+  .searchbaricon{
+    position: absolute;
+    top: 0; }
+  .searchbararea{
+    margin-bottom: 50px;}
+  .formlocationhide{
+    top: 60px !important;}
+  .header_searchbar input {
+    margin: 10px 0;}
+  .headersearchbar span{
+    top: 15px !important;}
+  .header_content {
+    top: 5%;}
+  .header_content .header_heading h1 {
+    font-size: 36px;}
+  .header_content .header_heading h6 {
+    font-size: 14px;}
+  .searchResults_iconBanner img {
+    max-width: 100%;}
+
+  /* headersearchbarmenu */
+  .headersearchbarmenu{
+    display: none;}
+    
+  /* form-area */
+  .header_content .header_form_color {
+    border-radius: 10px;}
+  .header_content {
+    top: 8%; }
+  .line {
+    display: none;}
+  .header_form_area {
+    width: 100%;
+    border-bottom: 1px solid #999;}
+  .btnsearch button {
+    width: 100%;
+    position: relative;
+    top: 0;
+    right: 0;
+    border-radius: 0;}
+  .btnsearch{
+    width: 100%;
+    padding: 10px 0;}
+
+  /* u-alignCenter */
+  .u-alignCenter .u_alignCenter_heading h1 {
+    font-size: 18px;
+    padding-bottom: 0px;}
+  .u_alignCenter_service{
+    flex-direction: column;
+    text-align: center;}
+  .u_alignCenter_content .u_alignCenter_content_img {
+    margin-right: 0px;
+    padding: 20px 0;}
+  .u_alignCenter_content .u_alignCenter_service {
+    margin-top: 20px !important;}
+
+  /* rentalCategory_slider_menu */
+  .rentalCategory_slider_menu .owl-stage{
+    width: 6085px !important;}
+  .rentalCategory_slider_menu .item{
+    width: 280px !important;}
+  .rentalCategory-slider {
+    padding: 15px 0;}
+  .rentalCategory_slider_menu .owl-next {
+    width: 28px;
+    right: 5px;
+    top: 29%;
+    border-radius: 0% !important;}
+  .rentalCategory_slider_menu .owl-prev {
+    width: 28px;
+    border-radius: 0% !important;
+    left: -5px;
+    top: 29%;}
+  .vehicleCard_slider_menu .owl-next {
+    width: 28px;
+    right: -5px;
+    top: 29%;
+    border-radius: 0% !important;}
+  .vehicleCard_slider_menu .owl-prev {
+    width: 28px;
+    border-radius: 0% !important;
+    left: -5px;
+    top: 29%;}
+
+  /* Recentlyviewed */
+  .Recentlyviewed-slider {
+    padding: 0px 0;}
+
+  /* topCities-slider */
+  .topCities-slider .topCities_heading h2 {
+    font-size: 35px;}
+  .topCities-slider {
+    padding: 35px 0;}
+  .topCities_slider_menu .owl-prev {
+    color: #fff !important;
+    border-radius: 0 !important;
+    position: absolute;
+    left: -4px;
+    width: 20px;
+    background: #231F20 !important;
+    top: 35%;
+    font-size: 18px !important;}
+  .topCities_slider_menu .owl-next {
+    color: #fff !important;
+    border-radius: 0 !important;
+    position: absolute;
+    right:5px ;
+    width: 20px;
+    background: #231F20 !important;
+    top: 35%;
+    font-size: 18px !important;}
+  .topCities_slider_menu .owl-stage{
+    width: 6085px !important;}
+  .topCities_slider_menu .item{
+    width: 280px !important;}
+
+  /* imageContent-area */
+  .pat {
+    padding-left: 0;
+    padding-right: 0;}
+  .imageContent_1, .imageContent_2 {
+    margin-bottom: 45px}
+  .Right_title{
+    margin-top: 20px;
+    text-align: center;}
+  .Right_title h1 {
+    font-size: 28px;}
+  .Right_btn {
+    text-align: center;
+    margin-bottom: 40px;
+    padding-top: 25px;}
+  .Right_title h1 {
+    font-size: 25px;}
+  .pat2 {
+    padding-right: 0;
+    padding-left: 0;}
+  .imageContent h1 {
+    font-size: 30px;}
+
+  .footer_list{
+    padding: 10px 0;}
+
+/*======================================
+      productsearch Page
+  ======================================
+*/
+  .searchFilterBar_content{
+    display: none;}
+  .header{
+    position: relative;;}
+  .searchResults {
+    margin-top: 40px;}
+  .map{
+  top: 37px;
+  position: relative;}
+
+/*book a car part css start*/
+  .bookacare {
+    margin: 0px;
+    margin-top: 50px;}
+  .bookacare:after{
+    height: 0px;}
+  .res_mt_30{
+    margin-top: 30px;} 
+  .youreCovered_content {
+    margin-left: 10px;}
+  .bookacarefaqItems_hide_content {
+    padding: 60px 30px 30px 30px;}
+  .bookacarefaqItems_hide_content span {
+    right: 30px;}
+  /*book a car part css end*/
+
+  /*carculator part css start*/
+  .Calculatorbanner_content h1{
+    font-size: 34px;}
+  /*calculator part css end*/
+
+  /*trust and safety css start*/
+  .Trustandsafety_content p{
+    text-align: justify;}
+  .TrustTipsTricks_content p{
+    text-align: justify;}
+
+  /*list your car css start*/
+  .listCNContent_title p{
+    text-align: justify;}
+
+  /* footer page*/
+  .footer_list{
+    justify-content: center;
+    padding: 10px 0;}
+
+/*============================
+      about page
+  ============================
+*/
+  .About_heading {
+    padding: 0px 0;}
+  .about_commutePattern_content h1{
+    font-size: 28px;
+    margin-bottom: 20px;}
+  .about_commutePattern {
+    padding: 30px 0;}
+  /* About-banner */
+  .about_greenLight {
+    padding: 20px 0;}
+  .about_greenLight_heading h1{
+    font-size: 35px;}
+  .Aboutbanner_heading img {
+    max-width: 50%;}
+  .about_greenLight_Content {
+    height: auto;}
+  .about_greenLight_text span {
+    font-size: 28px;}
+  .About-banner {
+    padding: 44px 0;}
+  .Aboutbanner_heading h1{
+    font-size: 28px;}
+
+/*============================
+      allstarhosts page
+  ============================
+*/
+  .allstarhosts-header {
+    padding: 35px 0px;}
+    .allstarhostsblock_heading {
+      padding: 25px 0 15px 0;}
+  .allstarhostsblock_heading h1{
+      font-size: 32px;
+      margin-bottom: 20px;}
+  .allstarhostsblock_content2 {
+    padding: 20px 0;}
+  .allstarhostsblock-2 {
+      margin-bottom: 20px;}
+  .allstarhostsblock_service_content, .allstarhostsblock_service_content p {
+      text-align: center; }
+  .allstarhostsbanner {
+      height: 330px;}
+/*============================
+      bookacare page
+  ============================
+*/
+  .bookacare_heading h1{
+    font-size: 36px;}
+  .bookacare_photo img {
+    top: 0px;}
+  .bookacare-area {
+    padding: 30px 0 0 0;}
+  .bookacareSlider .owl-prev {
+    width: 35px;
+    border-radius: 0% !important;
+    top: 34%;
+    left: -5px;}
+  .bookacareSlider .owl-next {
+    width: 35px;
+    border-radius: 0% !important;
+    top: 34%;
+    right: -5px;}
+  .bookacareSlider_content{
+    text-align:center;}
+  .bookacareSliderC_text h1{
+    font-size: 40px;}
+  .bookacareimage {
+    text-align: center;
+    padding: 50px 0 0 0px;}
+  .bookacareimage_right {
+    height: 200px;}
+  .youreCovered_heading h1{
+    font-size: 36px;}
+  .youreCovered {
+      padding: 20px 0;}
+  .youreCovered_text {
+    padding: 30px 0 0;
+    text-align: center}
+  .bookacare_faqItems {
+    padding: 0px 0;}
+  .bookacare_faqItems h1{
+    text-align: center;
+    font-size: 35px;}
+  .bookacare-banner_content {
+    padding: 50px 0;}
+  .bookacare-banner_content button {
+    margin-top: 5px;}
+  .bookacareRecent_heading{
+    text-align: center;}
+  .bookacareRecent_content {
+      text-align: center;}
+  .bookacareRecent_photo{
+    text-align: center;
+    width: 100%;
+    margin: 10px 0;}
+  .bookacareRecent_btn {
+      padding: 30px 0 0;}
+
+/*============================
+      carculator page
+  ============================
+*/
+  .carculetor-header {
+    height: 500px;}
+  .CalculatorSlider .owl-nav {
+    display: none;}
+  .CalculatorSlider .item{
+    width: 300px !important;}
+  .CalculatorSlider_text h6 {
+      margin-top: 22%;}
+  .Calculatorbanner_content {
+    padding-top: 50px;}
+  .Calculatorbanner {
+    height: 240px;}
+  .Calculatorbanner2 {
+      padding: 30px 0;}
+  .Calculatorbanner2_text {
+    padding: 55px 20px;}
+
+/*============================
+      hosttools page
+  ============================
+*/
+  .hosttools-header {
+    height: 350px;}
+  .hosttoolvideo_content {
+    padding: 40px 0;}
+  .hosttoolvideo_content h1{
+    font-size: 35px;}
+  .hosttoolquick_heading {
+    margin-top: 55px;}
+  .hosttool-Community {
+    padding: 40px 0 0 0;}
+  .hosttoolCommunity_heading h1 {
+    font-size: 35px}
+  .hosttooldownload_content {
+    padding: 50px 0;}
+  .hosttooldownload_content h1 {
+    font-size: 35px;}
+  .hosttool-Protips {
+    padding: 40px 0;}
+  .hosttool-Additional {
+    padding: 40px 0;}
+  .hosttoolAdditional_btn a {
+    padding: 10px 40px;}
+  .hosttoolqus_btn {
+    display: flex;
+    flex-direction: column;}
+
+/*============================
+      listyourcar page
+  ============================
+*/
+  .listYourCarNew_title h1 {
+    font-size: 35px;}
+  .listYourCarNew_headerHero_img {
+    height: 250px;
+    margin-bottom: 10px;}
+  .listCNCcontent_heading h1{
+    text-align: center;
+    font-size: 33px;}
+  .listCNContent_contentsectiom {
+    padding: 10px 0 0 0;}
+  .listCNContent_content {
+    padding-left: 30px}
+  .listCNContent_footer {
+    padding: 5px 0;}
+  .listCNC_contentright_img {
+    margin-top: 20px;}
+  .listCNContent_content_2{
+    text-align: center;
+    margin-top: 30px;}
+  .listCNContent_content2_heading h1 {
+    padding: 0px 0;
+    font-size: 40px;}
+  .listYC-BackContentItem-conteent {
+    padding: 5px 0;
+    text-align: center;}
+  .listYC-BackContentItem-heading h1, .listYC-video_heading h1{
+    font-size: 36px;}
+  .listYCvideo {
+    padding: 15px 0;}
+  .listYCPortfolio_text{
+    text-align: center;
+    margin-top: 20px;}
+  .listYCPortfolio_content {
+    padding: 10px 0;}
+  .listYC-footer-area {
+    padding: 0 0 50px;}
+  .listYCBlog {
+    padding: 0px 0 25px 0}
+  .listYCBlog_photo img {
+    position: static;}
+  .listYourCarNew_btn {
+    width: 100%;
+    float: none !important;
+    text-align: center;}
+
+/*============================
+      mortymobilebanner page
+  ============================
+*/
+  .mortymobilebannerImg {
+    height: 200px;}
+  .mortymobile_text h1, .mortymobileDrive_content h1, .mortymobileMorty_heading h1,
+  .mortyTuro_heading h1 {
+    font-size: 36px;}
+  .mortymobileDrive {
+    padding: 0 0 30px 0;}
+  .mortymobileMorty {
+    padding: 30px 0 0 0;}
+  .mortymobileMortytextarea {
+    padding: 50px 0 0 0;}
+  .mortymobileDrive_content{
+    text-align: center;
+    margin-top: 50px;}
+  .mortymobileMortyContemt {
+    text-align: center;}
+  .mortymobileMorty_photo {
+    width: 100%;}
+  .mortymobileMorty_text{
+    text-align: center;
+    width: 100%;}
+  .mortymobileMortyphoto img {
+    width: 100%;
+    padding: 20px 0;}
+  .mortyTuro_content{
+    text-align: center;}
+  .mortyTuro_footer {
+    padding: 0px 0;}
+
+/*=========================
+      Nocarsfound Page
+=========================*/
+
+  .Nocarsfound {
+    margin-top: 40px;}
+  .Nocarsfound_content{
+    margin-top: 0px;} 
+  .Nocarsfound_content h1{
+    font-size: 36px;}
+
+/*=========================
+      singup & login Page
+=========================*/
+  .singup, .login {
+      padding: 50px 0;}
+  .modal_btn {
+    padding: 28px 0;}
+  .modal_title {
+    padding: 20px 0;} 
+  .loginor{
+    margin: 0;
+    padding: 20px 0}
+
+/*=========================
+      team Page
+=========================*/
+  .team-header {
+    height:auto;
+    text-align: center;}
+  .teamheader_heading {
+    padding: 50px 0;}
+  .teamheader_heading h1, .team_heading h1, .tembanner_content h1{
+    font-size: 36px;}
+  .teamBoard_heading h1{
+    font-size: 35px;}
+  .team_heading{
+    text-align: center;}
+  .tembannerContent {
+    padding: 50px;
+    margin: 20px 0;}
+  .teamBoardcontent {
+    padding: 20px 0;}
+  .tembannerContent {
+      padding: 20px;
+      margin: 20px 0;
+      text-align: center;
+      display: flex;
+      flex-direction: column;}
+
+/*============================
+      classiccarrental page
+  ============================*/ 
+  
+  .classic-header {
+    height: 610px;}
+  .bookacareSlider_content{
+    margin-top: 40px;}
+  .classicbannerleftimg img {
+    margin-top: 0px;}
+  .classicCarModel {
+    padding: 0px 0 0 0;}
+  .classicCarModel_title h1{
+    font-size: 30px;}
+  .topCities-slider .topCities_heading h2 {
+    font-size: 30px;}
+  .classicCarModel_content{
+    padding: 30px 0 0 0;}
+  .classictopCities_slider{
+    padding: 40px 0;}
+  .classicCarModel_title {
+    padding: 0px 0;}
+  .classicCarModel_content, .classicCarModel_btn{
+    text-align: center;}
+  
+/*============================
+      beverlyhillscare page
+  ============================
+*/
+  .beverlyhillscareProduct-slider {
+    padding: 30px 0;}
+  
+/*============================
+     cart page
+  ============================
+*/
+  .card-page {
+    padding: 0px 0px 30px 0px;
+  }
+  .card-area .table .card-table-heading th {
+    display: none;
+  }
+  .card-area .table .card-table-heading th:first-child {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+  .card-area .table tbody tr td {
+    display: block;
+    text-align: center;
+    width: 100%;}
+
+/*============================
+     carrentalrustin page
+  ============================
+*/
+  .carrentalrustin-product {
+    padding: 30px 0;
+  }
+  .bookacareSliderC_text h1, .carrrModel_content h1 {
+    font-size: 36px;
+  }
+  .ctr_heading h1{
+  font-size: 27px;
+  }
+  .bhc_hosted_content {
+  padding: 40px 0 0;}
+  .carrrModelContent {
+    padding: 0px 0 20px;
+  }
+  .carrentalrustinModel2_title h1{
+  font-size: 30px;
+  }
+  .carrentalrustinList {
+    padding: 40px 0 0;
+  }
+  .beverlyhillscare_map_title h1 {
+    padding-top: 25px;}
+
+  }

@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="author" content="ABU SAYED">
+    <!-- favicon css -->
+    <link rel="icon" href="assets/images/favicon1.ico" sizes="60x60" type="image/x-icon">
+    <!-- Site Title css -->
+    <title>Unlock cars form</title>
+
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Fontawesome CSS -->
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <!-- Jquery-ui CSS -->
+    <link rel="stylesheet" href="assets/css/jquery-ui.min.css">
+    <!-- wow.animate CSS -->
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <!-- owl.carousel CSS -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+    
+    <section class="header-area">
+      <!-- haderNAV_top Start -->
+      <div class="hader_top">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-12">
+                      <nav class="navbar navbar-expand-lg navbar-light bgnav_color">
+                        <!-- site_logo Start -->
+                          <div class="site_logo col-md-2">
+                              <a class="navbar-brand" href="index.html">
+                                  <img  src="assets/images/Turo_logo2.png" class="img-fluid" alt="Responsive image">
+                              </a>
+                          </div>
+                          <!-- Site_logo END// -->
+
+                          <!-- headersearchbarmenu -->
+                          <div class="searchbararea headersearchbarmenu">
+                            <div class="header_searchbar headersearchbar">
+                                <div onfocusout='hideOptions()'>
+                                    <span style="color:#59d389; top:37px; position:absolute;">Where</span>
+                                    <input type = "text" id = "insertText" autocomplete="off" placeholder="City, airport, address, or hotel" onkeyup = "if (event.keyCode == 13) {SearchAddress(option1.text)} else {giveSuggestion()}" onfocus='showOptions()'/>
+
+                                    <div class="form_location_hide formlocationhide">
+                                            <option class="option" id = "option1" onmousedown = "searchAddress(option1.text)" >
+                                                <i class="fas fa-location-arrow"></i>
+                                                &nbsp; Current location
+                                            </option>
+                                            <option class="option" id = "option2" onmousedown = "searchAddress(option2.text)">
+                                                <i class="fas fa-place-of-worship"></i>
+                                                &nbsp; Los Angeles, CA</a>
+
+                                            </option>
+                                            <option class="option" id = "option3" onmousedown = "searchAddress(option3.text)">
+                                                <i class="fas fa-bus-alt"></i>
+                                                &nbsp; Union Station, Los Angeles
+                                            
+                                            </option>
+                                            <option class="option" id = "option4" onmousedown = "searchAddress(option4.text)">
+                                                <i class="fas fa-plane-departure"></i>
+                                                &nbsp; San Jose Norman Mineta airport
+                                            
+                                            </option>
+                                            <option class="option" id = "option5" onmousedown = "searchAddress(option5.text)"> 
+                                                <i class="fas fa-place-of-worship"></i>
+                                                &nbsp; Sheraton Grand, Los Angeles
+                                            </option>
+                                            <option class="option" id = "option6" onmousedown = "searchAddress(option6.text)">
+                                                <i class="fas fa-place-of-worship"></i>
+                                                &nbsp; San Francisco, CA
+                                            </option>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+
+                          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+
+                          <div class="collapse navbar-collapse justify-content-end navbg_color.navbg_custom_color" id="navbarNav">
+                            <ul class="navbar-nav">
+                              <li class="nav-item active">
+                                <a class="nav-link" href="listyourcar.html">List your car <span class="sr-only">(current)</span></a>
+                              </li>
+                              <div class="dropdown">
+                                <button class="dropbtn">Learn more</button>
+                                <div class="dropdown-content">
+                                    <a href="bookacare.html">Book a care</a>
+                                    <a href="carculator.html">Carculator</a>
+                                    <a href="allstarhosts.html">All star hosts</a>
+                                    <a href="hosttools.html">Host tools</a>
+                                    <a href="trustandsafety.html">Trust & safety</a>
+                                </div>
+                              </div>                          
+                              <!-- Sign up-->
+                              <li class="nav-item">
+                                <a class="nav-link" href="#" data-toggle="modal" data-target="#myModal">Sign up</a>
+                                <!-- The Modal -->
+                                <div class="modal" id="myModal">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <!-- Modal Header -->
+                                            <div class="modal-header">
+                                                <!-- <h4 class="modal-title">Modal Heading</h4> -->
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            </div>
+                                            <!-- Modal body -->
+                                            <div class="modal-body text-center">
+                                                <div class="modal_title">
+                                                    <h1>Welcome to Turo</h1>
+                                                </div>
+
+                                                <div class="modal_signupFragment">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#"> <span><i class="fab fa-apple"></i></span>    Continue with Apple</a>
+                                                        </li>            
+                                                        <li>
+                                                            <a href="#"><span><i class="fab fa-google-plus-g"></i></span> Continue with Google</a>
+                                                        </li>                     
+                                                        <li>
+                                                            <a href="#"><span style="color:#4267B2"><i class="fab fa-facebook-f"></i></span> Continue with Facebook</a>
+                                                        </li>                       
+                                                        <li>
+                                                            <a href="continueemailsign.html"><span><i class="far fa-envelope"></i></span> Continue with email</a>
+                                                        </li>
+                                                    </ul>
+                                                    <!-- modal_btn -->
+                                                    <div class="modal_btn">
+                                                        <p>Already have an account?</p>
+                                                        <span><a href="login.html">Log in </a></span>
+                                                    </div>
+
+                                                    <div class="authFormTextAndButton">
+                                                        <p>This site is protected  by reCAPTCHA <a href="#">Privacy Policy</a>  and <a href="#">Terms of Service</a> the Google  and  apply</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                              </li>
+
+                            <!-- Login Start-->
+                              <li class="nav-item">
+                                <a class="nav-link" href="#" data-toggle="modal" data-target="#myModal2" >Log in</a>
+                                <!-- The Modal -->
+                                <div class="modal" id="myModal2">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <!-- Modal Header -->
+                                            <div class="modal-header">
+                                                <!-- <h4 class="modal-title">Modal Heading</h4> -->
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            </div>
+                                            <!-- Modal body -->
+                                            <div class="modal-body text-center">
+                                                <div class="modal_title">
+                                                    <h1>Welcome back</h1>
+                                                </div>
+
+                                                <form>
+                                                    <div class="form-group">
+                                                        <label for="inputEmail4">Email</label>
+                                                        <input type="email" class="form-control" id="inputEmail4">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="inputPassword4">Password</label> <a href="#" class="float-right" style="color: #8F63F4;">Forgot your password?</a>
+                                                        <input type="password" class="form-control" id="inputPassword4">
+                                                    </div>
+
+                                                    <button type="submit" class="btn btn-primary col-md-12">Submit</button>
+
+                                                    <p style="font-weight: bold; padding: 20px 0; margin: 0;">Or</p>
+                                                  </form>
+
+                                                <!-- modal_signupFragment -->
+                                                <div class="modal_signupFragment">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#"> <span><i class="fab fa-apple"></i></span>    Continue with Apple</a>
+                                                        </li>            
+                                                        <li>
+                                                            <a href="#"><span><i class="fab fa-google-plus-g"></i></span> Continue with Google</a>
+                                                        </li>                     
+                                                        <li>
+                                                            <a href="#"><span style="color:#4267B2"><i class="fab fa-facebook-f"></i></span> Continue with Facebook</a>
+                                                        </li>                       
+                                                        <li>
+                                                            <a href="continueemailsign.html"><span><i class="far fa-envelope"></i></span> Continue with email</a>
+                                                        </li>
+                                                    </ul>
+                                                    <!-- modal_btn -->
+                                                    <div class="modal_btn">
+                                                        <p>Don’t have an account?</p>
+                                                        <span><a href="signup.html">Sign up </a></span>
+                                                    </div>
+
+                                                    <div class="authFormTextAndButton">
+                                                        <p>This site is protected  by reCAPTCHA <a href="#">Privacy Policy</a>  and <a href="#">Terms of Service</a> the Google  and  apply</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                              </li>                           
+                              <li class="nav-item">
+                                <a class="nav-link bg_icon" href="#">
+                                  <i class="far fa-user-circle"></i>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                      </nav>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- haderNAV_top END// -->
+    </section>
+    <!------============ header-wrapper  END//================= -->
+
+    <!----============= unlockcarsform-area Start ====================-->
+    <section class="unlockcarsform">
+        <!-- unlockcarsformbannerImg -->
+        <div class="unlockcarsformbannerImg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-xl-6 offset-1">
+                        <div class="unlockcarsformbanne_content">
+                            <h1 class="wow pulse" data-wow-duration="2s"
+                            data-wow-iteration="100">Ready, set, go!</h1>
+                            <p>Access cars in Los Angeles, San Francisco, San Diego, and London instantly by finding, booking, and unlocking cars enabled with Turo Go technology, right from the Turo app.</p>
+
+                            <!-- listYourCarNew_btn -->
+                            <div class="listYourCarNew_btn unlockcarsform_btn">
+                                <a href="nocarfound.html">Browse Turo Go-enabled cars</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!----=============== unlockcarsform-area  END//================= -->
+
+    <!----============= unlockcarsblog-area Start ====================-->
+    <section class="unlockcarsblog">
+        <div class="container">
+            <div class="row">
+                <!-- unlockcarsblog-1 start-->
+                <div class="col-md-12 col-xl-10 m-auto">
+                    <div class="row">
+                        <!-- unlockcarsblog_content -->
+                        <div class="col-md-6">
+                            <div class="unlockcarsblog_content wow bounceInLeft" data-wow-duration="2s">
+                                <h1>Do it all on the go</h1>
+                                <p>Turo Go technology brings a new level of convenience to car sharing — approved guests can book, locate*, and unlock instantly accessible cars directly from the Turo app. </p>
+
+                                <p>Anytime you need to jump in the driver’s seat, you can filter for Turo Go-enabled cars and find nearby options that are instantly available.</p>
+
+                                <p>Turo Go is currently available in greater Los Angeles, the San Francisco Bay Area, San Diego, and London so next time you need a car in these select markets, be among the first to try this revolutionary new feature.</p>
+                            </div>
+                        </div>                        
+                        <!-- unlockcarsblog_photo -->
+                        <div class="col-md-6">
+                            <div class="unlockcarsblog_photo text-center wow bounceInRight" data-wow-duration="4s">
+                                <img src="assets/images/d5b74cb1-section-2-image-turo-go-3x_0af07400000000000001o.jpg" class="img-fluid" alt="Responsive image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- unlockcarsblog-1 END//-->
+
+                <!-- unlockcarsblog-2 start-->
+                <div class="col-md-12 col-xl-10  m-auto">
+                    <div class="row unlockcarsblog2">
+                        <!-- unlockcarsblog-2-heading -->
+                        <div class="col-sm-12 col-md-7 col-xl-7 ">
+                            <div class="unlockcarsblog-2-heading">
+                                <h1 class="wow fadeInDown" data-wow-duration="3s">Cars on demand</h1>
+                                <p>Book a car when you need it, access it instantly, and start your trip without worrying about an in-person key handoff. Be in control of your own schedule and skip meeting with your host.</p>
+                            </div>
+                        </div>
+
+                        <!-- unlockcarsblog2_content-->
+                        <div class="col-sm-12 col-md-12 col-xl-12">
+                            <div class="row unlockcarsblog2_content">
+                                <!-- item -->
+                                <div class="col-md-6 col-xl-4">
+                                    <div class="unlockcarsblog-2-heading wow bounceInRight" data-wow-duration="2s">
+                                        <img src="assets/images/c8fcb04c-turo-go-icon-3x_01e01e000000000000001.png" class="img-fluid" alt="Responsive image">
+                                        <h3>GPS guidance</h3>
+                                        <p>Locate your vehicle easily with GPS guidance from the Turo app.</p>
+                                    </div>
+                                </div>
+                                <!-- item -->
+                                <div class="col-md-6 col-xl-4">
+                                    <div class="unlockcarsblog-2-heading wow bounceInRight" data-wow-duration="4s">
+                                        <img src="assets/images/34a4b878-lock-icon-3x_01e01e000000000000001.png" class="img-fluid" alt="Responsive image">
+                                        <h3>Seamless check-ins</h3>
+                                        <p>Document the car's condition with the Turo app before your trip, and unlock the doors through your phone's cellular or Bluetooth connection.</p>
+                                    </div>
+                                </div>
+                                <!-- item -->
+                                <div class="col-md-6 col-xl-4">
+                                    <div class="unlockcarsblog-2-heading wow bounceInRight" data-wow-duration="6s">
+                                        <img src="assets/images/727be96e-car-icon-3x_01e01e000000000000001.png" class="img-fluid" alt="Responsive image">
+                                        <h3>Find a car for any occasion</h3>
+                                        <p>From daily drivers to zippy sports cars, choose from a wide range of the latest makes and models</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-10">
+                            <!-- listYourCarNew_btn -->
+                            <div class="listYourCarNew_btn unlockcarsform_btn wow fadeInUp" data-wow-duration="5s">
+                                <a href="nocarfound.html">Browse Turo Go-enabled cars</a>
+                            </div>
+                            <p style="color:#999; padding-top:20px">*Guests and hosts have access to the vehicle location until the trip begins. Guests have access to the vehicle location throughout the trip. Turo may also be able to locate the vehicle from time to time during the trip.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!----=============== unlockcarsblog-area  END//================= -->
+
+    <!----============= unlockcarscars-area Start ====================-->
+    <section class="unlockcarscars">
+        <div class="container">
+            <div class="row">
+                <!-- unlockcarscars_heading -->
+                <div class="col-md-12 col-xl-7 offset-xl-1">
+                    <div class="unlockcarscars_heading">
+                        <h1 class=" wow fadeInDown" data-wow-duration="2s">Great cars, exceptional hosts</h1>
+                        <p>Get top-level service from reliable and responsive hosts in Los Angeles, the San Francisco Bay Area, San Diego, and London. All Turo Go hosts meet high performance standards and have proven track records of providing exceptional guest experiences.</p>
+
+                        <p>Stay tuned as Turo Go expands to new markets in the near future!</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- unlockcarscars_contentimg-area -->
+            <div class="row">
+                <div class="col-md-12 col-xl-7 offset-xl-1">
+                    <div class="row">
+                        <!-- item -->
+                        <div class="col-12 col-md-4 col-xl-6">
+                            <div class="unlockcarscars_item m-2">
+                                <div class="unlockcarscars_item_img">
+                                    <a href="#">
+                                        <img src="assets/images/7bf609fc-vehicle-1-3x_08504d00000000000001o.jpg" class="img-fluid" alt="Responsive image">
+                                    </a>
+                                </div>                                
+                                <div class="unlockcarscars_item_text">
+                                    <span style="font-weight: 400; padding-top:10px; display: block; ">Torq Auto's</span>
+                                    <a href="#">
+                                        <h3>Mercedes-Benz SL-Class</h3>
+                                        <span style="font-weight: bold;font-size: 16px;margin-left: 10px;">2018</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>                        
+                        <!-- item -->
+                        <div class="col-12 col-md-4 col-xl-6">
+                            <div class="unlockcarscars_item m-2">
+                                <div class="unlockcarscars_item_img">
+                                    <a href="#">
+                                        <img src="assets/images/304d4551-vehicle-2-3x_08504d00000000000001o.jpg" class="img-fluid" alt="Responsive image">
+                                    </a>
+                                </div>                                
+                                <div class="unlockcarscars_item_text">
+                                    <span style="font-weight: 400; padding-top:10px; display: block; ">AliZain's</span>
+                                    <h3> Nissan Altima</h3>
+                                    <span style="font-weight: bold;font-size: 16px;margin-left: 10px;">2014</span>
+                                </div>
+                            </div>
+                        </div>                       
+                         <!-- item -->
+                        <div class="col-12 col-md-4 col-xl-6">
+                            <div class="unlockcarscars_item m-2">
+                                <div class="unlockcarscars_item_img">
+                                    <a href="#">
+                                        <img src="assets/images/304d4551-vehicle-2-3x_08504d00000000000001o.jpg" class="img-fluid" alt="Responsive image">
+                                    </a>
+                                </div>                                
+                                <div class="unlockcarscars_item_text">
+                                    <span style="font-weight: 400; padding-top:10px; display: block; ">Jerry's</span>
+                                    <h3>Dodge Challenger </h3>
+                                    <span style="font-weight: bold;font-size: 16px;margin-left: 10px;">2014</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item -->
+                        <div class="col-12 col-md-4 col-xl-6">
+                            <div class="unlockcarscars_item m-2">
+                                <div class="unlockcarscars_item_img">
+                                    <a href="#">
+                                        <img src="assets/images/304d4551-vehicle-2-3x_08504d00000000000001o.jpg" class="img-fluid" alt="Responsive image">
+                                    </a>
+                                </div>                                
+                                <div class="unlockcarscars_item_text">
+                                    <span style="font-weight: 400; padding-top:10px; display: block; ">Ray's</span>
+                                    <h3>Chevrolet Cruze</h3>
+                                    <span style="font-weight: bold;font-size: 16px;margin-left: 10px;">2016</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!----=============== unlockcarscars-area  END//================= -->
+
+    <!----============= unlcarsReady-area Start ====================-->
+    <section class="unlcarsReady">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 offset-md-1">
+                    <div class="unlcarsReady_content">
+                        <h1 class="wow fadeInDown" data-wow-duration="2s">Ready to go?</h1>
+                        <p>Be one of the first to use the new feature — try Turo Go on your next trip in LA, San Francisco, San Diego, or London.</p>
+
+                        <!-- listYourCarNew_btn -->
+                        <div class="listYourCarNew_btn unlcarsReady_btn wow fadeInUp" data-wow-duration="3s">
+                            <a href="nocarfound.html">Let's go!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!----=============== unlcarsReady-area  END//================= -->
+
+    <!----============= footer-area Start ================ -->
+    <section class="footer-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-xl-10 m-auto">
+                    <div class="row">
+                        <!-- footer_content -->
+                        <div class="col-sm-6 col-md-4 col-xl-4">
+                            <div class="footer_content">
+                                <div class="footer_address">
+                                    <h4>Corporate Office :</h4>
+                                    <p>
+                                        48, KaziNazrul Islam Avenue, Karwan Bazar, Dhaka-1215, Bangladesh.                                       <br>                                    <span>Phone :  +8801722158130, +8801709372481</span>
+                                    </p>
+                                </div>                                
+                                <div class="footer_address">
+                                    <h4>Support Center :</h4>
+                                    <p>
+                                        12/6, Solimullah Road, Mohammadpur, Dhaka 1207, Bangladesh.   <br>                                    <span>Phone :  +8801722158130, +8801709372481</span>
+                                    </p>
+                                </div>                                
+                            </div>
+                        </div>
+
+                        <!-- footer_content -->
+                        <div class="col-sm-6 col-md-4 col-xl-5">
+                            <div class="facebook_page" style="margin-top:30px">
+                                <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fpg/codinghunters35&tabs&width=380&height=185&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="100%" height="200" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+                            </div>
+                        </div>
+
+                        <!-- footer_content -->
+                        <div class="col-sm-6 col-md-4 col-xl-3">
+                            <div class="footer_content text-center">
+                                <div class="footer_title">
+                                    <ul class="footer_icon d-flex  justify-content-center" >
+                                        <li>
+                                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="fab fa-twitter"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="fab fa-instagram"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="fab fa-youtube"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- footer_logolist -->
+                                <ul class="footer_logolist d-flex">
+                                    <a href="#">
+                                        <img src="assets/images/app-store-badge-en.svg"  class="img-fluid" alt="Responsive image">
+                                    </a>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- copy -->
+                <div class="col-md-12">
+                    <div class="copy">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-6 col-xl-4 m-auto">
+                                <ul class="footer_list d-flex">
+                                    <li><a href="#"> ©2020 Turo </a></li>
+                                    <li><a href="about.html"> About </a></li>
+                                    <li><a href="team.html"> Teams </a></li>
+                                    <li><a href="404.html"> Privacy </a></li>
+                                    <li><a href="404.html"> Sitemap </a></li>
+                                </ul>
+                            </div>
+
+                            <div class="col-sm-12col-md-6 col-xl-6">
+                                <ul class="footer_list d-flex">
+                                    <a href="#">
+                                        <span><i class="fa fa-angle-up" aria-hidden="true"></i></span>
+                                        <span>&nbsp;<img src="assets/images/english-us-selected.png" class="img-fluid" alt="Responsive image"></span>
+                                        <span>&nbsp; English (USA)</span>
+                                    </a>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!----============= footer-area Start ================ -->
+
+
+
+ <!-- Jquery & Jquery-ui JS -->
+<script type="text/javaScript" src="assets/js/jquery.js"></script>
+<script type="text/javaScript" src="assets/js/jquery-ui.min.js"></script>
+<!-- Bootstrap JS -->
+<script type="text/javaScript" src="assets/js/bootstrap.min.js"></script>
+<!-- Fontawesome JS -->
+<script type="text/javaScript" src="assets/js/fontawesome.min.js"></script>
+<!-- owl.carousel js -->
+<script type="text/javaScript" src="assets/js/owl.carousel.min.js"></script>
+<script type="text/javaScript" src="assets/js/owl.carousel.custom.js"></script>
+<!-- javascript-all.custom js-->
+<script type="text/javaScript" src="assets/js/javascript.custom.js"></script>
+<!-- typed js -->
+<script type="text/javaScript" src="assets/js/typed.js"></script>
+<script type="text/javaScript" src="assets/js/typed.custom.js"></script>
+<!-- scroll -->
+<script type="text/javaScript" src="assets/js/scroll.js"></script>
+<!-- wow.min -->
+<script type="text/javaScript" src="assets/js/wow.min.js"></script>
+<script type="text/javaScript" src="assets/js/wow.script.js"></script>
+</body>
+</html>

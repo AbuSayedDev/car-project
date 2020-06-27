@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="author" content="ABU SAYED">
+    <!-- favicon css -->
+    <link rel="icon" href="assets/images/favicon1.ico" sizes="60x60" type="image/x-icon">
+    <!-- Site Title css -->
+    <title>product search</title>
+
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Fontawesome CSS -->
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <!-- Jquery-ui CSS -->
+    <link rel="stylesheet" href="assets/css/jquery-ui.min.css">
+    <!-- wow.animate CSS -->
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <!-- owl.carousel CSS -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+    
+    <section class="header ">
+        <!-- haderNAV_top Start -->
+        <div class="hader_top search-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2">
+                        <div class="site_logo Site_logo">
+                            <a href="index.html">
+                                <img src="assets/images/Turo_logo2.png" class="img-fluid" alt="Responsive image">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-8 m-auto">
+                        <div class="row searchbararea">
+                            <div class="col-md-12 col-xl-4">
+                                <div class="header_searchbar headersearchbar">
+                                    <div onfocusout='hideOptions()'>
+                                        <span style="color:#59d389; top:37px; position:absolute;">Where</span>
+                                        <input type = "text" id = "insertText" autocomplete="off" placeholder="City, airport, address, or hotel" onkeyup = "if (event.keyCode == 13) {SearchAddress(option1.text)} else {giveSuggestion()}" onfocus='showOptions()'/>
+    
+                                        <div class="form_location_hide formlocationhide">
+                                                <option class="option" id = "option1" onmousedown = "searchAddress(option1.text)" >
+                                                    <i class="fas fa-location-arrow"></i>
+                                                    &nbsp; Current location
+                                                </option>
+                                                <option class="option" id = "option2" onmousedown = "searchAddress(option2.text)">
+                                                    <i class="fas fa-place-of-worship"></i>
+                                                    &nbsp; Los Angeles, CA</a>
+    
+                                                </option>
+                                                <option class="option" id = "option3" onmousedown = "searchAddress(option3.text)">
+                                                    <i class="fas fa-bus-alt"></i>
+                                                    &nbsp; Union Station, Los Angeles
+                                                
+                                                </option>
+                                                <option class="option" id = "option4" onmousedown = "searchAddress(option4.text)">
+                                                    <i class="fas fa-plane-departure"></i>
+                                                    &nbsp; San Jose Norman Mineta airport
+                                                
+                                                </option>
+                                                <option class="option" id = "option5" onmousedown = "searchAddress(option5.text)"> 
+                                                    <i class="fas fa-place-of-worship"></i>
+                                                    &nbsp; Sheraton Grand, Los Angeles
+                                                </option>
+                                                <option class="option" id = "option6" onmousedown = "searchAddress(option6.text)">
+                                                    <i class="fas fa-place-of-worship"></i>
+                                                    &nbsp; San Francisco, CA
+                                                </option>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12 col-xl-4">
+                                <div class="row datrandtime">
+
+                                    <div class="textform">
+                                        <span>Form</span>
+                                    </div>
+
+                                    <div class="formdate">
+                                        <input type="text" id="tbDate" placeholder="02/07/2020"/><span class="float-right"><i class="fa fa-angle-down" aria-hidden="true"></i></span>
+                                    </div>
+
+                                    <div class="formtime">
+                                        <select name="" id="" class="form-control"  onfocus='this.size=5;' onblur='this.size=1;' onchange='this.size=1; this.blur();' >
+                                            <div class="selectOption">
+                                                <option value="">10:00AM</option>
+                                                <option value="">12:30 AM</option>
+                                                <option value="">1:00 AM</option>
+                                                <option value="">1:30 AM</option>
+                                                <option value="">2:00 AM</option>
+                                                <option value="">2:30 AM</option>
+                                                <option value="">3:00 AM</option>
+                                                <option value="">3:30 AM</option>
+                                                <option value="">4:00 AM</option>
+                                                <option value="">4:30 AM</option>
+                                                <option value="">5:00 AM</option>
+                                                <option value="">5:30 AM</option>
+                                                <option value="">6:00 AM</option>
+                                                <option value="">6:30 AM</option>
+                                                <option value="">7:00 AM</option>
+                                                <option value="">7:30 AM</option>
+                                                <option value="">8:00 AM</option>
+                                                <option value="">8:30 AM</option>
+                                                <option value="">9:00 AM</option>
+                                                <option value="">9:30 AM</option>
+                                                <option value="">10:00 AM</option>
+                                                <option value="">10:30 AM</option>
+                                                <option value="">11:00 AM</option>
+                                                <option value="">11:30 AM</option>
+                                                <option value="">noon</option>
+                                                <option value="">12:30 PM</option>
+                                                <option value="">1:00 PM</option>
+                                                <option value="">1:30 PM</option>
+                                                <option value="">2:00 PM</option>
+                                                <option value="">2:30 PM</option>
+                                                <option value="">3:00 PM</option>
+                                                <option value="">3:30 PM</option>
+                                                <option value="">4:00 PM</option>
+                                                <option value="">4:30 PM</option>
+                                                <option value="">5:00 PM</option>
+                                                <option value="">5:30 PM</option>
+                                                <option value="">6:00 PM</option>
+                                                <option value="">6:30 PM</option>
+                                                <option value="">7:00 PM</option>
+                                                <option value="">7:30 PM</option>
+                                                <option value="">8:00 PM</option>
+                                                <option value="">8:30 PM</option>
+                                                <option value="">9:00 PM</option>
+                                                <option value="">9:30 PM</option>
+                                                <option value="">10:00 PM</option>
+                                                <option value="">10:30 PM</option>
+                                                <option value="">11:00 PM</option>
+                                                <option value="">11:30 PM</option>
+                                            </div>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>  
+
+                            <div class="col-md-12 col-xl-4">
+                                <div class="row datrandtime">
+
+                                    <div class="textform">
+                                        <span>Form</span>
+                                    </div>
+                                    <div class="formdate">
+                                        <input type="text" id="tbDate" placeholder="02/07/2020"/><span class="float-right"><i class="fa fa-angle-down" aria-hidden="true"></i></span>
+                                    </div>
+
+                                    <div class="formtime">
+                                        <select name="" id="" class="form-control"  onfocus='this.size=5;' onblur='this.size=1;' onchange='this.size=1; this.blur();' >
+                                            <div class="selectOption">
+                                                <option value="">10:00AM</option>
+                                                <option value="">12:30 AM</option>
+                                                <option value="">1:00 AM</option>
+                                                <option value="">1:30 AM</option>
+                                                <option value="">2:00 AM</option>
+                                                <option value="">2:30 AM</option>
+                                                <option value="">3:00 AM</option>
+                                                <option value="">3:30 AM</option>
+                                                <option value="">4:00 AM</option>
+                                                <option value="">4:30 AM</option>
+                                                <option value="">5:00 AM</option>
+                                                <option value="">5:30 AM</option>
+                                                <option value="">6:00 AM</option>
+                                                <option value="">6:30 AM</option>
+                                                <option value="">7:00 AM</option>
+                                                <option value="">7:30 AM</option>
+                                                <option value="">8:00 AM</option>
+                                                <option value="">8:30 AM</option>
+                                                <option value="">9:00 AM</option>
+                                                <option value="">9:30 AM</option>
+                                                <option value="">10:00 AM</option>
+                                                <option value="">10:30 AM</option>
+                                                <option value="">11:00 AM</option>
+                                                <option value="">11:30 AM</option>
+                                                <option value="">noon</option>
+                                                <option value="">12:30 PM</option>
+                                                <option value="">1:00 PM</option>
+                                                <option value="">1:30 PM</option>
+                                                <option value="">2:00 PM</option>
+                                                <option value="">2:30 PM</option>
+                                                <option value="">3:00 PM</option>
+                                                <option value="">3:30 PM</option>
+                                                <option value="">4:00 PM</option>
+                                                <option value="">4:30 PM</option>
+                                                <option value="">5:00 PM</option>
+                                                <option value="">5:30 PM</option>
+                                                <option value="">6:00 PM</option>
+                                                <option value="">6:30 PM</option>
+                                                <option value="">7:00 PM</option>
+                                                <option value="">7:30 PM</option>
+                                                <option value="">8:00 PM</option>
+                                                <option value="">8:30 PM</option>
+                                                <option value="">9:00 PM</option>
+                                                <option value="">9:30 PM</option>
+                                                <option value="">10:00 PM</option>
+                                                <option value="">10:30 PM</option>
+                                                <option value="">11:00 PM</option>
+                                                <option value="">11:30 PM</option>
+                                            </div>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>   
+                        </div>
+                    </div>
+
+                    <div class="col-md-2 searchbaricon">
+                        <ul>
+                            <li class="nav-item justify-content-end site_icon">
+                                <a class="nav-link bg_icon" href="#">
+                                    <i class="far fa-user-circle"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- haderNAV_top END// -->
+    </section>
+    <!------============ header-wrapper  END//================= -->
+
+    <!----============= searchFilterBar Start ================ -->
+    <section class="searchFilterBar">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12" style=" padding: 0;">
+                    <div class="searchFilterBar_content">
+
+                        <ul class="nav nav-tabs navlist" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#home" role="tab">Sort by</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#Price" role="tab">Price</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#instantly" role="tab">Book instantly</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#Delivery" role="tab">Delivery</a>
+                            </li>                        
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#filters" role="tab">More filters</a>
+                            </li>
+                        </ul> 
+                    
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div class="tab-pane" id="home" role="tabpanel">
+                                <!-- searchFilterBar_Item_hide -->
+                                <div class="searchFilterBar_Item_hide" >
+                                    <div class="close" style="position: relative; top: -30px;"><a href="#" style="color: #777;"><i class="fas fa-times"></i></a></div>
+
+                                    <span style="font-weight: bold;">Sort by</span>
+
+
+                                    <form action="">
+                                        <div class="custom-control custom-radio custom-control-inline form-check">
+                                            <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+                                            <label class="custom-control-label" for="customRadioInline1">RELEVANCE</label>
+                                            </div>
+
+                                        <div class="custom-control custom-radio custom-control-inline form-check">
+                                            <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+                                            <label class="custom-control-label" for="customRadioInline2">Price: low to high</label>
+                                            </div>
+
+                                            <div class="custom-control custom-radio custom-control-inline form-check">
+                                            <input type="radio" id="customRadioInline3" name="customRadioInline1" class="custom-control-input">
+                                            <label class="custom-control-label" for="customRadioInline3">Price: high to low</label>
+                                            </div>
+        
+                                        <!-- searchBar_Item_btn -->
+                                        <div class="searchBar_Item_btn">
+                                            <button type="button" class="btn btn-success">Apply</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <!-- Item_hide2 -->
+                            <div class="tab-pane" id="Price" role="tabpanel">
+                                <!-- searchFilterBar_Item_hide2 -->
+                                <div class="searchFilterBar_Item_hide Item_hide2">
+                                    
+                                    <div class="close" style="position: relative; top: -30px;"><a href="#" style="color: #777;"><i class="fas fa-times"></i></a></div>
+
+                                    <span style="font-weight: bold;">Price</span>
+
+                                    <!-- price_range_progress -->
+                                    <div class="priceRange">
+                                        <div class="ubcount">
+                                            <span id="amount" style="color: #777;"></span>
+                                            <div id="priceSlider" style="margin: 10px 0;"></div>
+                                        </div>
+                                    </div>
+                                    <!-- price_range_progress end//-->
+
+                                    <!-- searchBar_Item_btn -->
+                                    <div class="searchBar_Item_btn searchBar_btn2">
+                                        <button type="button" class="btn btn-success">View 200+ results</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Item_hide3 -->
+                            <div class="tab-pane" id="instantly" role="tabpanel">
+                                <div class="searchFilterBar_Item_hide Item_hide3" id="searchBar_Item_hide3">
+
+                                    <div class="close" style="position: relative; top: -30px;"><a href="#" style="color: #777;"><i class="fas fa-times"></i></a></div>
+
+                                    <span style="font-weight: bold;">Book instantly</span>
+
+                                    <p style="padding: 10px 0;">Reserve the car without waiting for owner approval.</p>
+
+                                    <!-- searchBar_Item_btn -->
+                                    <div class="searchBar_Item_btn searchBar_btn3 d-flex">
+                                        <button type="button" class="btn btn-success">View 200+ results</button>
+
+                                        <a href="#">
+                                            <ul>
+                                                <li>Remove</li>
+                                            </ul> 
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Item_hide4 -->
+                            <div class="tab-pane" id="Delivery" role="tabpanel">
+                                <div class="searchFilterBar_Item_hide Item_hide4">
+
+                                    <div class="close" style="position: relative; top: -30px;"><a href="#" style="color: #777;"><i class="fas fa-times"></i></a></div>
+
+                                    <span style="font-weight: bold;">Delivery</span>
+
+                                    <!-- price_range_progress3 -->
+                                    <div class="priceRange">
+                                        <div class="ubcount">
+                                            <span id="amount3" style="color: #777;"></span>
+                                            <div id="priceSlider3" style="margin: 10px 0;"></div>
+                                        </div>
+                                    </div>
+                                    <!-- price_range_progress end//-->
+
+                                    <!-- searchBar_Item_btn -->
+                                    <div class="searchBar_Item_btn searchBar_btn2">
+                                        <button type="button" class="btn btn-success">View 200+ results</button>
+                                    </div>
+                                </div>
+                            </div>   
+
+                            <!-- Item_hide5 -->
+                            <div class="tab-pane" id="filters" role="tabpanel">
+                                <div class="searchFilterBar_Item_hide scroll Item_hide5" id="searchBar_Item_hide5" style="overflow-y: scroll; height: 470px;">
+                                    
+                                    <div class="close" style="position: relative; top: -30px;"><a href="#" style="color: #777;"><i class="fas fa-times"></i></a></div>
+
+                                    <span style="font-weight: bold;">
+                                        DISTANCE INCLUDED</span> <br>
+                                    
+                                    <!-- price_range_progress4 -->
+                                    <div class="priceRange">
+                                        <div class="ubcount">
+                                            <span id="amount4" style="color: #777;"></span>
+                                            <div id="priceSlider4" style="margin: 10px 0;"></div>
+                                        </div>
+                                    </div>
+                                    <!-- price_range_progress end//-->
+
+                                    <form action="#">
+                                        <!-- formgroup_checkitem -->
+                                        <div class="formgroup_checkitem">
+                                            <div class="form_group_item">
+                                                <div class="form_check_title">
+                                                    <h6>ALL-STAR HOST</h6>
+                                                </div>
+                                                <div class="form-group form-check">
+                                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                    <label class="form-check-label" for="exampleCheck1">Top-rated, experienced hosts</label>
+                                                </div>
+                                            </div>
+                                            <!-- form_group_item2 -->
+                                            <div class="form_group_item">
+                                                <div class="form_check_title">
+                                                    <h6>APP UNLOCK</h6>
+                                                </div>
+                                                <div class="form-group form-check">
+                                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                    <label class="form-check-label" for="exampleCheck1">Unlock the car from the app with Turo Go</label>
+                                                </div>
+                                            </div>
+                                            <!-- form_group_item3 -->
+                                            <div class="form_group_item">
+                                                <div class="form_check_title">
+                                                    <h6>BUSINESS CLASS</h6>
+                                                </div>
+                                                <div class="form-group form-check">
+                                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                    <label class="form-check-label" for="exampleCheck1">Cars for business travel</label>
+                                                </div>
+                                            </div>                                        
+                                            <!-- form_group_item4 -->
+                                            <div class="form_group_item">
+                                                <div class="form_check_title">
+                                                    <h6>DELUXE CLASS</h6>
+                                                </div>
+                                                <div class="form-group form-check">
+                                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                    <label class="form-check-label" for="exampleCheck1">Exclusive cars for guests ages 25+</label>
+                                                </div>
+                                            </div>                                        
+                                            <!-- form_group_item4 -->
+                                            <div class="form_group_item">
+                                                <div class="form_check_title">
+                                                    <h6>SUPER DELUXE CLASS</h6>
+                                                </div>
+                                                <div class="form-group form-check">
+                                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                    <label class="form-check-label" for="exampleCheck1">Super exclusive cars for guests ages 30+</label>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- formgroup_selectOption -->
+                                        <div class="formgroup_selectOption">
+                                            <!-- formgroup_selectOption_item -->
+                                            <div class="formgroup_selectOption_item">
+                                                <div class="selectOption_title">
+                                                    <h6>FEATURES</h6>
+                                                </div>
+                                                <select id="cars">
+                                                    <option value="select">-Select-</option>
+                                                    <option value="saab">Saab</option>
+                                                    <option value="opel">Opel</option>
+                                                    <option value="audi">Audi</option>
+                                                </select>
+                                            </div> 
+                                                                                        
+                                            <!-- formgroup_selectOption_item2 -->
+                                            <div class="formgroup_selectOption_item">
+                                                <div class="selectOption_title">
+                                                    <h6>GREEN VEHICLES</h6>
+                                                </div>
+                                                <select id="cars">
+                                                    <option value="select">-Select-</option>
+                                                    <option value="saab">Saab</option>
+                                                    <option value="opel">Opel</option>
+                                                    <option value="audi">Audi</option>
+                                                </select>
+                                            </div> 
+
+                                            <!-- formgroup_selectOption_item3 -->
+                                            <div class="formgroup_selectOption_item">
+                                                <div class="selectOption_title">
+                                                    <h6>VEHICLE TYPES</h6>
+                                                </div>
+                                                <select id="cars">
+                                                    <option value="select">-Select-</option>
+                                                    <option value="saab">Saab</option>
+                                                    <option value="opel">Opel</option>
+                                                    <option value="audi">Audi</option>
+                                                </select>
+                                            </div>    
+
+                                            <!-- formgroup_selectOption_item4 -->
+                                            <div class="formgroup_selectOption_item">
+                                                <div class="selectOption_title">
+                                                    <h6>VEHICLE MAKES</h6>
+                                                </div>
+                                                <select id="cars">
+                                                    <option value="select">-Select-</option>
+                                                    <option value="saab">Saab</option>
+                                                    <option value="opel">Opel</option>
+                                                    <option value="audi">Audi</option>
+                                                </select>
+                                            </div>  
+
+                                            <!-- price_range_progress5 -->
+                                            <div class="priceRange">
+                                                <div class="ubcount">
+                                                    <span id="amount5" style="color: #777;"></span>
+                                                    <div id="priceSlider5" style="margin: 10px 0;"></div>
+                                                </div>
+                                            </div>
+                                            <!-- price_range_progress end//-->
+
+                                            <!-- formgroup_selectOption_item5 -->
+                                            <div class="formgroup_selectOption_item">
+                                                <div class="selectOption_title">
+                                                    <h6>NUMBER OF SEATS</h6>
+                                                </div>
+                                                <select id="cars">
+                                                    <option value="select">-Select-</option>
+                                                    <option value="saab">Saab</option>
+                                                    <option value="opel">Opel</option>
+                                                    <option value="audi">Audi</option>
+                                                </select>
+                                            </div>                                        
+                                            <!-- formgroup_selectOption_item6 -->
+                                            <div class="formgroup_selectOption_item">
+                                                <div class="selectOption_title">
+                                                    <h6>CATEGORY</h6>
+                                                </div>
+                                                <select id="cars">
+                                                    <option value="select">-Select-</option>
+                                                    <option value="saab">Saab</option>
+                                                    <option value="opel">Opel</option>
+                                                    <option value="audi">Audi</option>
+                                                </select>
+                                            </div>                                        
+                                            <!-- formgroup_selectOption_item7 -->
+                                            <div class="formgroup_selectOption_item">
+                                                <div class="selectOption_title">
+                                                    <h6>VEHICLE COLORS</h6>
+                                                </div>
+                                                <select id="cars">
+                                                    <option value="select">-Select-</option>
+                                                    <option value="saab">Saab</option>
+                                                    <option value="opel">Opel</option>
+                                                    <option value="audi">Audi</option>
+                                                </select>
+                                            </div>                                        
+                                            <!-- formgroup_selectOption_item8 -->
+                                            <div class="formgroup_selectOption_item">
+                                                <div class="selectOption_title">
+                                                    <h6>TRANSMISSION</h6>
+                                                </div>
+                                                <select id="cars">
+                                                    <option value="select">-Select-</option>
+                                                    <option value="saab">Saab</option>
+                                                    <option value="opel">Opel</option>
+                                                    <option value="audi">Audi</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <!-- searchBar_Item_btn -->
+                                        <div class="searchBar_Item_btn searchBar_Item_btn4">
+                                            <button type="button" class="btn btn-success">View 200+ results</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section >
+    <!------============ searchFilterBar  END//================= -->
+
+    <!----============= searchResults-area Start ================ -->
+    <section class="searchResults">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <!-- searchResults_iconBanner -->
+                    <div class="row">
+                        <div class="col-md-10">
+                            <div class="searchResults_iconBanner d-flex wow fadeInDown" data-wow-duration="2s">
+                                <img src="assets/images/calendar.88x88.jpg" class=" rounded img-fluid" alt="Responsive image">
+                                <p>Los Angeles area guests have completed over 516,047 trips, and rate their experience an average 4.8 stars out of 5.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- searchResults_iconBanner END//-->
+
+                    <div class="row searchResultsScroll">
+                        <!-- item Start -->
+                        <div class="col-md-6">
+                            <div class="vehicleCard_slider_service">
+                                <a href="#">
+                                    <!-- vehicleCard_slider_content  -->
+                                    <div class="vehicleCard_slider_img">
+                                        <img src="assets/images/vehicleCard/images (2).jpg" class="rounded img-fluid" alt="Responsive image">
+
+                                        <div class="vehicleCard_slider_img_icon">
+                                                <span><i class="far fa-heart"></i></span>
+                                        </div>
+                                        <div class="vehicleCard-priceAmount">
+                                                <span>$149/day</span>
+                                        </div>
+                                    </div>
+                                    <!-- vehicleCard_slider_content -->
+                                    <div class="vehicleCard_slider_content">
+                                            <div class="vehicleCard_slider_text">
+                                                <h4>Lexus RX 450h</h4><span>2012</span>
+                                            </div>
+                                            <div class="vehicleCard-rating"> 
+                                                <p>5.0</p><span style="color: #9A73F5;"><i class="fas fa-star"></i></span>
+                                                <span class="vehicleCard_trips">(4 trips)</span>
+                                            </div>
+                                            <!-- vehicleCard -->
+                                            <div class="d-flex">
+                                                <div class="vehicleCard">
+                                                    <a href="#"> 
+                                                        Book instantly</a>
+                                                </div>
+                                                <div class="vehicleCard">
+                                                    <a href="#"> Business class</a>
+                                                </div>
+                                            </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- item Start -->
+                        <div class="col-md-6">
+                            <div class="vehicleCard_slider_service">
+                                <a href="#">
+                                    <!-- vehicleCard_slider_content  -->
+                                    <div class="vehicleCard_slider_img">
+                                        <img src="assets/images/vehicleCard/images (2).jpg" class="rounded img-fluid" alt="Responsive image">
+
+                                        <div class="vehicleCard_slider_img_icon">
+                                                <span><i class="far fa-heart"></i></span>
+                                        </div>
+                                        <div class="vehicleCard-priceAmount">
+                                                <span>$149/day</span>
+                                        </div>
+                                    </div>
+                                    <!-- vehicleCard_slider_content -->
+                                    <div class="vehicleCard_slider_content">
+                                            <div class="vehicleCard_slider_text">
+                                                <h4>Lexus RX 450h</h4><span>2012</span>
+                                            </div>
+                                            <div class="vehicleCard-rating"> 
+                                                <p>5.0</p><span style="color: #9A73F5;"><i class="fas fa-star"></i></span>
+                                                <span class="vehicleCard_trips">(4 trips)</span>
+                                            </div>
+                                            <!-- vehicleCard -->
+                                            <div class="d-flex">
+                                                <div class="vehicleCard">
+                                                    <a href="#"> 
+                                                        Book instantly</a>
+                                                </div>
+                                                <div class="vehicleCard">
+                                                    <a href="#"> Business class</a>
+                                                </div>
+                                            </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- item Start -->
+                        <div class="col-md-6">
+                            <div class="vehicleCard_slider_service">
+                                <a href="#">
+                                    <!-- vehicleCard_slider_content  -->
+                                    <div class="vehicleCard_slider_img">
+                                        <img src="assets/images/vehicleCard/images (2).jpg" class="rounded img-fluid" alt="Responsive image">
+
+                                        <div class="vehicleCard_slider_img_icon">
+                                                <span><i class="far fa-heart"></i></span>
+                                        </div>
+                                        <div class="vehicleCard-priceAmount">
+                                                <span>$149/day</span>
+                                        </div>
+                                    </div>
+                                    <!-- vehicleCard_slider_content -->
+                                    <div class="vehicleCard_slider_content">
+                                            <div class="vehicleCard_slider_text">
+                                                <h4>Lexus RX 450h</h4><span>2012</span>
+                                            </div>
+                                            <div class="vehicleCard-rating"> 
+                                                <p>5.0</p><span style="color: #9A73F5;"><i class="fas fa-star"></i></span>
+                                                <span class="vehicleCard_trips">(4 trips)</span>
+                                            </div>
+                                            <!-- vehicleCard -->
+                                            <div class="d-flex">
+                                                <div class="vehicleCard">
+                                                    <a href="#"> 
+                                                        Book instantly</a>
+                                                </div>
+                                                <div class="vehicleCard">
+                                                    <a href="#"> Business class</a>
+                                                </div>
+                                            </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- item Start -->
+                        <div class="col-md-6">
+                            <div class="vehicleCard_slider_service">
+                                <a href="#">
+                                    <!-- vehicleCard_slider_content  -->
+                                    <div class="vehicleCard_slider_img">
+                                        <img src="assets/images/vehicleCard/images (2).jpg" class="rounded img-fluid" alt="Responsive image">
+
+                                        <div class="vehicleCard_slider_img_icon">
+                                                <span><i class="far fa-heart"></i></span>
+                                        </div>
+                                        <div class="vehicleCard-priceAmount">
+                                                <span>$149/day</span>
+                                        </div>
+                                    </div>
+                                    <!-- vehicleCard_slider_content -->
+                                    <div class="vehicleCard_slider_content">
+                                            <div class="vehicleCard_slider_text">
+                                                <h4>Lexus RX 450h</h4><span>2012</span>
+                                            </div>
+                                            <div class="vehicleCard-rating"> 
+                                                <p>5.0</p><span style="color: #9A73F5;"><i class="fas fa-star"></i></span>
+                                                <span class="vehicleCard_trips">(4 trips)</span>
+                                            </div>
+                                            <!-- vehicleCard -->
+                                            <div class="d-flex">
+                                                <div class="vehicleCard">
+                                                    <a href="#"> 
+                                                        Book instantly</a>
+                                                </div>
+                                                <div class="vehicleCard">
+                                                    <a href="#"> Business class</a>
+                                                </div>
+                                            </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- item Start -->
+                        <div class="col-md-6">
+                            <div class="vehicleCard_slider_service">
+                                <a href="#">
+                                    <!-- vehicleCard_slider_content  -->
+                                    <div class="vehicleCard_slider_img">
+                                        <img src="assets/images/vehicleCard/images (2).jpg" class="rounded img-fluid" alt="Responsive image">
+
+                                        <div class="vehicleCard_slider_img_icon">
+                                                <span><i class="far fa-heart"></i></span>
+                                        </div>
+                                        <div class="vehicleCard-priceAmount">
+                                                <span>$149/day</span>
+                                        </div>
+                                    </div>
+                                    <!-- vehicleCard_slider_content -->
+                                    <div class="vehicleCard_slider_content">
+                                            <div class="vehicleCard_slider_text">
+                                                <h4>Lexus RX 450h</h4><span>2012</span>
+                                            </div>
+                                            <div class="vehicleCard-rating"> 
+                                                <p>5.0</p><span style="color: #9A73F5;"><i class="fas fa-star"></i></span>
+                                                <span class="vehicleCard_trips">(4 trips)</span>
+                                            </div>
+                                            <!-- vehicleCard -->
+                                            <div class="d-flex">
+                                                <div class="vehicleCard">
+                                                    <a href="#"> 
+                                                        Book instantly</a>
+                                                </div>
+                                                <div class="vehicleCard">
+                                                    <a href="#"> Business class</a>
+                                                </div>
+                                            </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- item Start -->
+                        <div class="col-md-6">
+                            <div class="vehicleCard_slider_service">
+                                <a href="#">
+                                    <!-- vehicleCard_slider_content  -->
+                                    <div class="vehicleCard_slider_img">
+                                        <img src="assets/images/vehicleCard/images (2).jpg" class="rounded img-fluid" alt="Responsive image">
+
+                                        <div class="vehicleCard_slider_img_icon">
+                                                <span><i class="far fa-heart"></i></span>
+                                        </div>
+                                        <div class="vehicleCard-priceAmount">
+                                                <span>$149/day</span>
+                                        </div>
+                                    </div>
+                                    <!-- vehicleCard_slider_content -->
+                                    <div class="vehicleCard_slider_content">
+                                            <div class="vehicleCard_slider_text">
+                                                <h4>Lexus RX 450h</h4><span>2012</span>
+                                            </div>
+                                            <div class="vehicleCard-rating"> 
+                                                <p>5.0</p><span style="color: #9A73F5;"><i class="fas fa-star"></i></span>
+                                                <span class="vehicleCard_trips">(4 trips)</span>
+                                            </div>
+                                            <!-- vehicleCard -->
+                                            <div class="d-flex">
+                                                <div class="vehicleCard">
+                                                    <a href="#"> 
+                                                        Book instantly</a>
+                                                </div>
+                                                <div class="vehicleCard">
+                                                    <a href="#"> Business class</a>
+                                                </div>
+                                            </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 map">
+                    <div class="">
+                        <!--Google map-->
+                        <div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 500px">
+                        <iframe src="https://maps.google.com/maps?q=manhatan&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
+                            style="border:0" allowfullscreen></iframe>
+                        </div>
+
+                        <!--Google Maps-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!----============  searchResults-area  END//============== -->
+
+    <!----============= footer-area Start ================ -->
+    <section class="footer-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-xl-10 m-auto">
+                    <div class="row">
+                        <!-- footer_content -->
+                        <div class="col-sm-6 col-md-4 col-xl-4">
+                            <div class="footer_content">
+                                <div class="footer_address">
+                                    <h4>Corporate Office :</h4>
+                                    <p>
+                                        48, KaziNazrul Islam Avenue, Karwan Bazar, Dhaka-1215, Bangladesh.                                       <br>                                    <span>Phone :  +8801722158130, +8801709372481</span>
+                                    </p>
+                                </div>                                
+                                <div class="footer_address">
+                                    <h4>Support Center :</h4>
+                                    <p>
+                                        12/6, Solimullah Road, Mohammadpur, Dhaka 1207, Bangladesh.   <br>                                    <span>Phone :  +8801722158130, +8801709372481</span>
+                                    </p>
+                                </div>                                
+                            </div>
+                        </div>
+
+                        <!-- footer_content -->
+                        <div class="col-sm-6 col-md-4 col-xl-5">
+                            <div class="facebook_page" style="margin-top:30px">
+                                <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fpg/codinghunters35&tabs&width=380&height=185&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="100%" height="200" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+                            </div>
+                        </div>
+
+                        <!-- footer_content -->
+                        <div class="col-sm-6 col-md-4 col-xl-3">
+                            <div class="footer_content text-center">
+                                <div class="footer_title">
+                                    <ul class="footer_icon d-flex  justify-content-center" >
+                                        <li>
+                                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="fab fa-twitter"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="fab fa-instagram"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="fab fa-youtube"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- footer_logolist -->
+                                <ul class="footer_logolist d-flex">
+                                    <a href="#">
+                                        <img src="assets/images/app-store-badge-en.svg"  class="img-fluid" alt="Responsive image">
+                                    </a>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- copy -->
+                <div class="col-md-12">
+                    <div class="copy">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-6 col-xl-4 m-auto">
+                                <ul class="footer_list d-flex">
+                                    <li><a href="#"> ©2020 Turo </a></li>
+                                    <li><a href="about.html"> About </a></li>
+                                    <li><a href="team.html"> Teams </a></li>
+                                    <li><a href="404.html"> Privacy </a></li>
+                                    <li><a href="404.html"> Sitemap </a></li>
+                                </ul>
+                            </div>
+
+                            <div class="col-sm-12col-md-6 col-xl-6">
+                                <ul class="footer_list d-flex">
+                                    <a href="#">
+                                        <span><i class="fa fa-angle-up" aria-hidden="true"></i></span>
+                                        <span>&nbsp;<img src="assets/images/english-us-selected.png" class="img-fluid" alt="Responsive image"></span>
+                                        <span>&nbsp; English (USA)</span>
+                                    </a>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!----============= footer-area Start ================ -->
+
+ <!-- Jquery & Jquery-ui JS -->
+ <script type="text/javaScript" src="assets/js/jquery.js"></script>
+ <script type="text/javaScript" src="assets/js/jquery-ui.min.js"></script>
+ <!-- Bootstrap JS -->
+ <script type="text/javaScript" src="assets/js/bootstrap.min.js"></script>
+ <!-- Fontawesome JS -->
+ <script type="text/javaScript" src="assets/js/fontawesome.min.js"></script>
+ <!-- owl.carousel js -->
+ <script type="text/javaScript" src="assets/js/owl.carousel.min.js"></script>
+ <script type="text/javaScript" src="assets/js/owl.carousel.custom.js"></script>
+ <!-- javascript-all.custom js-->
+ <script type="text/javaScript" src="assets/js/javascript.custom.js"></script>
+ <!-- scroll -->
+<script type="text/javaScript" src="assets/js/scroll.js"></script>
+<!-- wow.min -->
+<script type="text/javaScript" src="assets/js/wow.min.js"></script>
+<script type="text/javaScript" src="assets/js/wow.script.js"></script>
+    
+</body>
+</html>
